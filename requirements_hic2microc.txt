@@ -132,7 +132,7 @@ notebook @ file:///home/conda/feedstock_root/build_artifacts/notebook_1741968175
 notebook_shim @ file:///home/conda/feedstock_root/build_artifacts/notebook-shim_1733408315203/work
 numba==0.61.2
 numexpr @ file:///Users/runner/miniforge3/conda-bld/numexpr_1732612855632/work
-numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225421156/work/dist/numpy-1.26.4-cp312-cp312-macosx_11_0_arm64.whl#sha256=011d57633d659db8280a5811d62d0c5a615719a6d7cbd46a04f6ffce0c2a7db3
+numpy==2.2.5
 opencv-contrib-python==4.10.0.84
 opencv-python==4.10.0.84
 openff-amber-ff-ports @ file:///home/conda/feedstock_root/build_artifacts/openff-amber-ff-ports_1699301684704/work
@@ -207,7 +207,7 @@ ruamel.yaml.clib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp
 sander==24.0
 scikit-image==0.25.1
 scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1736496824048/work/dist/scikit_learn-1.6.1-cp312-cp312-macosx_11_0_arm64.whl#sha256=b73b4426f1e03a197903eddede31a62b6859e1eb5d298b145d003d742720c9f7
-scipy==1.15.1
+scipy==1.15.2
 seaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_1733730015268/work
 Send2Trash @ file:///Users/runner/miniforge3/conda-bld/send2trash_1733322099476/work
 setuptools==75.8.0
