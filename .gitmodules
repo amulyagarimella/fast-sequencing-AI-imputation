@@ -1,0 +1,3 @@
+[submodule "HiC2MicroC"]
+	path = HiC2MicroC
+	url = https://github.com/zwang-bioinformatics/HiC2MicroC.git
