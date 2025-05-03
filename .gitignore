@@ -1,5 +1,3 @@
 *.pyc
 *.pt
 venvs/
-*.err
-*.out
