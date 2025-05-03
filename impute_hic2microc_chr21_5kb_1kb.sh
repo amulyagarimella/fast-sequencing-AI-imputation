@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=impute_hic2microc_chr21_5000
+#SBATCH --job-name=impute_hic2microc_chr21_5kb_1kb
 #SBATCH --account=kempner_undergrads
 #SBATCH --partition=kempner_requeue
 #SBATCH --nodes=1
@@ -27,4 +27,4 @@ cooler balance data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool::resoluti
 /usr/bin/time -v python HiC2MicroC/src/HiC2MicroC.py \
   -f1 data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool::resolutions/5000 \
   -f2 data/hg38.chr21.sizes \
-  -f3 impute_hic2microc_chr21_5000_${SLURM_JOB_ID}
+  -f3 impute_hic2microc_chr21_5kb_1kb_${SLURM_JOB_ID}
