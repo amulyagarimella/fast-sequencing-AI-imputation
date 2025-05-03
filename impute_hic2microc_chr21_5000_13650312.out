@@ -1,0 +1,8 @@
+GPU: 0
+Batch size: 64
+Chromosomes avoid: ['chrY']
+Start time: 2025-05-03 15:25:26.874988
+Start predicting chr21 46709983 9342
+Done. Processing chr21
+DOne.
+End time: 2025-05-03 15:35:33.227200

@@ -1,3 +1,6 @@
 [submodule "HiC2MicroC"]
 	path = HiC2MicroC
 	url = https://github.com/zwang-bioinformatics/HiC2MicroC.git
+[submodule "DeepHiC"]
+	path = DeepHiC
+	url = https://github.com/omegahh/DeepHiC.git
