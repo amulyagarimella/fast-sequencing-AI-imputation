@@ -21,9 +21,7 @@ module load python
 source venvs/impute_hic2microc/bin/activate
 
 # Normalize the .cool file if not already normalized.
-if ! cooler dump --field weight data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool::resolutions/5000 | head -n 1 | grep -q '[0-9]'; then
-  cooler balance data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool::resolutions/5000
-fi
+cooler balance data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool::resolutions/5000
 
 # Run HiC2MicroC imputation with CPU memory/time tracking.
 /usr/bin/time -v python HiC2MicroC/src/HiC2MicroC.py \
