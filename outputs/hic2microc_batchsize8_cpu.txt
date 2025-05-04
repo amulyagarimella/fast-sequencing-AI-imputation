@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/Users/amulyagarimella/Documents/2241finalproject/HiC2MicroC/src/HiC2MicroC.py", line 149, in <module>
+    mat_hic = clr.matrix(balance=True).fetch(regionj, regionk)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amulyagarimella/Documents/2241finalproject/.venv/lib/python3.11/site-packages/cooler/core/_selectors.py", line 186, in fetch
+    return self._slice(self.field, i0, i1, j0, j1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amulyagarimella/Documents/2241finalproject/.venv/lib/python3.11/site-packages/cooler/api.py", line 373, in _slice
+    return matrix(
+           ^^^^^^^
+  File "/Users/amulyagarimella/Documents/2241finalproject/.venv/lib/python3.11/site-packages/cooler/api.py", line 742, in matrix
+    reader = CSRReader(h5["pixels"], h5["indexes/bin1_offset"][:])
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/Users/amulyagarimella/Documents/2241finalproject/.venv/lib/python3.11/site-packages/h5py/_hl/dataset.py", line 802, in __getitem__
+    return self._fast_reader.read(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
