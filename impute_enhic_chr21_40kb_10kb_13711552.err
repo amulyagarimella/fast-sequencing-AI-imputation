@@ -1,0 +1,212 @@
+INFO:cooler.create:Creating cooler at "data/raw/GM12878-GSE115524-chr21.40kb.cool::/"
+INFO:cooler.create:Writing chroms
+INFO:cooler.create:Writing bins
+INFO:cooler.create:Writing pixels
+INFO:cooler.reduce:0 435525
+INFO:cooler.create:Writing indexes
+INFO:cooler.create:Writing info
+INFO:cooler.cli.balance:Balancing "data/raw/GM12878-GSE115524-chr21.40kb.cool"
+INFO:cooler.balance:variance is 688622.9852038554
+INFO:cooler.balance:variance is 229767.53947534494
+INFO:cooler.balance:variance is 104884.02592491204
+INFO:cooler.balance:variance is 58193.60624905701
+INFO:cooler.balance:variance is 40548.898155494986
+INFO:cooler.balance:variance is 24192.109051935997
+INFO:cooler.balance:variance is 17861.918784386457
+INFO:cooler.balance:variance is 11573.24534922921
+INFO:cooler.balance:variance is 8540.115203460842
+INFO:cooler.balance:variance is 5861.13367367689
+INFO:cooler.balance:variance is 4339.316155067644
+INFO:cooler.balance:variance is 3102.038635145043
+INFO:cooler.balance:variance is 2328.6417700747907
+INFO:cooler.balance:variance is 1717.939802595048
+INFO:cooler.balance:variance is 1316.3418993208095
+INFO:cooler.balance:variance is 996.3097265881216
+INFO:cooler.balance:variance is 780.4760309668935
+INFO:cooler.balance:variance is 603.2177990232382
+INFO:cooler.balance:variance is 482.06234128735645
+INFO:cooler.balance:variance is 378.87610941192435
+INFO:cooler.balance:variance is 307.6254290872448
+INFO:cooler.balance:variance is 244.959197838304
+INFO:cooler.balance:variance is 201.1883192241279
+INFO:cooler.balance:variance is 161.81060012466747
+INFO:cooler.balance:variance is 133.91821095974205
+INFO:cooler.balance:variance is 108.51944524393416
+INFO:cooler.balance:variance is 90.23898473778964
+INFO:cooler.balance:variance is 73.53774080360446
+INFO:cooler.balance:variance is 61.31388268165241
+INFO:cooler.balance:variance is 50.17836143415655
+INFO:cooler.balance:variance is 41.89270366625907
+INFO:cooler.balance:variance is 34.39473336948227
+INFO:cooler.balance:variance is 28.728924261640714
+INFO:cooler.balance:variance is 23.64514973084837
+INFO:cooler.balance:variance is 19.74956966197234
+INFO:cooler.balance:variance is 16.285785613170653
+INFO:cooler.balance:variance is 13.598569845287617
+INFO:cooler.balance:variance is 11.230356299671284
+INFO:cooler.balance:variance is 9.373234326323022
+INFO:cooler.balance:variance is 7.750041645019317
+INFO:cooler.balance:variance is 6.46533696460505
+INFO:cooler.balance:variance is 5.350778084362719
+INFO:cooler.balance:variance is 4.46166125654494
+INFO:cooler.balance:variance is 3.6953351543380477
+INFO:cooler.balance:variance is 3.079916826304134
+INFO:cooler.balance:variance is 2.552496737073093
+INFO:cooler.balance:variance is 2.126543942920069
+INFO:cooler.balance:variance is 1.7632748233560478
+INFO:cooler.balance:variance is 1.4684987850556845
+INFO:cooler.balance:variance is 1.218145147857193
+INFO:cooler.balance:variance is 1.0141851998624059
+INFO:cooler.balance:variance is 0.8415705791948208
+INFO:cooler.balance:variance is 0.7004745242474502
+INFO:cooler.balance:variance is 0.5814166722784891
+INFO:cooler.balance:variance is 0.4838268436335706
+INFO:cooler.balance:variance is 0.4016851306850245
+INFO:cooler.balance:variance is 0.3341981369222208
+INFO:cooler.balance:variance is 0.2775128492254507
+INFO:cooler.balance:variance is 0.23085022108623068
+INFO:cooler.balance:variance is 0.19172482232679244
+INFO:cooler.balance:variance is 0.1594651442546203
+INFO:cooler.balance:variance is 0.13245580728498726
+INFO:cooler.balance:variance is 0.11015603441863517
+INFO:cooler.balance:variance is 0.09150840109293716
+INFO:cooler.balance:variance is 0.07609502905249405
+INFO:cooler.balance:variance is 0.06321910414101263
+INFO:cooler.balance:variance is 0.05256644179623942
+INFO:cooler.balance:variance is 0.04367504146565159
+INFO:cooler.balance:variance is 0.03631318055360333
+INFO:cooler.balance:variance is 0.030172839978804433
+INFO:cooler.balance:variance is 0.025085498372989318
+INFO:cooler.balance:variance is 0.020844774093350543
+INFO:cooler.balance:variance is 0.017329394448509287
+INFO:cooler.balance:variance is 0.014400467438711522
+INFO:cooler.balance:variance is 0.011971424613715913
+INFO:cooler.balance:variance is 0.009948431454720352
+INFO:cooler.balance:variance is 0.00827008070052451
+INFO:cooler.balance:variance is 0.006872764569437674
+INFO:cooler.balance:variance is 0.005713139914661355
+INFO:cooler.balance:variance is 0.004747963109991125
+INFO:cooler.balance:variance is 0.003946762191413351
+INFO:cooler.balance:variance is 0.003280064429921856
+INFO:cooler.balance:variance is 0.00272651487383248
+INFO:cooler.balance:variance is 0.0022659833606275778
+INFO:cooler.balance:variance is 0.001883542632056906
+INFO:cooler.balance:variance is 0.001565418546672954
+INFO:cooler.balance:variance is 0.0013011986160475894
+INFO:cooler.balance:variance is 0.0010814432784527486
+INFO:cooler.balance:variance is 0.0008989016764283929
+INFO:cooler.balance:variance is 0.0007470963408468936
+INFO:cooler.balance:variance is 0.0006209850842319747
+INFO:cooler.balance:variance is 0.0005161181517678173
+INFO:cooler.balance:variance is 0.00042899325392807016
+INFO:cooler.balance:variance is 0.0003565507665660019
+INFO:cooler.balance:variance is 0.00029636029523027736
+INFO:cooler.balance:variance is 0.00024631642913223724
+INFO:cooler.balance:variance is 0.00020473391537809826
+INFO:cooler.balance:variance is 0.0001701630217659914
+INFO:cooler.balance:variance is 0.000141435928490264
+INFO:cooler.balance:variance is 0.00011755384402726097
+INFO:cooler.balance:variance is 9.77079382996756e-05
+INFO:cooler.balance:variance is 8.120978212889933e-05
+INFO:cooler.balance:variance is 6.749942567955274e-05
+INFO:cooler.balance:variance is 5.610218068474196e-05
+INFO:cooler.balance:variance is 4.663053618002121e-05
+INFO:cooler.balance:variance is 3.875707967844891e-05
+INFO:cooler.balance:variance is 3.221371608375143e-05
+INFO:cooler.balance:variance is 2.6774555582091737e-05
+INFO:cooler.balance:variance is 2.225416560808013e-05
+INFO:cooler.balance:variance is 1.8496665005401803e-05
+INFO:cooler.balance:variance is 1.5373822544176963e-05
+INFO:cooler.balance:variance is 1.2778048648308797e-05
+INFO:cooler.balance:variance is 1.0620683363875388e-05
+INFO:cooler.balance:variance is 8.827456751519172e-06
+2025-05-04 01:05:10.925620: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2025-05-04 01:05:10.927952: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2025-05-04 01:05:30.523538: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2025-05-04 01:05:30.722687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:ca:00.0 name: NVIDIA A100-SXM4-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.38GiB deviceMemoryBandwidth: 1.41TiB/s
+2025-05-04 01:05:30.722813: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.723646: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.724347: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.725532: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.727325: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.728017: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusparse.so.10'; dlerror: libcusparse.so.10: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.728723: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory
+2025-05-04 01:05:30.728730: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2025-05-04 01:05:30.733020: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-05-04 01:05:30.776116: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2600000000 Hz
+2025-05-04 01:05:30.776611: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a979f52880 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2025-05-04 01:05:30.776627: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2025-05-04 01:05:30.779629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-05-04 01:05:30.779642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14ffc4f70a90> and <model.Weight_R1M object at 0x14ffc4f70908>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Weight_R1M object at 0x14ffc4f70908> and <model.Reconstruct_R1M object at 0x14ffc4f70278>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14ffc4ed4da0> and <model.Weight_R1M object at 0x14ffc000f6a0>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Weight_R1M object at 0x14ffc000f6a0> and <model.Reconstruct_R1M object at 0x14ffc000fc50>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14ffc4f243c8> and <model.Weight_R1M object at 0x14ffc4f6c710>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Weight_R1M object at 0x14ffc4f6c710> and <model.Symmetry_R1M object at 0x14ffc4f6ccc0>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Subpixel object at 0x14ffc5466d68> and <tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14ffc4efda20>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14ffc4efda20> and <model.Symmetry_R1M object at 0x14ffc4ee1b38>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14ffc4f29d68> and <model.Weight_R1M object at 0x14ffc0017080>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Weight_R1M object at 0x14ffc0017080> and <model.Symmetry_R1M object at 0x14ffc00178d0>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<model.Subpixel object at 0x14ffb11c0438> and <tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14ffb11c08d0>).
+WARNING:tensorflow:Inconsistent references when loading the checkpoint into this object graph. Either the Trackable object references in the Python program have changed in an incompatible way, or the checkpoint was generated in an incompatible program.
+
+Two checkpoint references resolved to different objects (<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14ffb11c08d0> and <model.Symmetry_R1M object at 0x14ffb11c0668>).
+Traceback (most recent call last):
+  File "test_predict.py", line 223, in <module>
+    start=None, end=None, draw_out=True)
+  File "test_predict.py", line 98, in run
+    predict_hic_hr_front = fit.predict(model_path, len_size, scale, hic_lr_ds)
+  File "/n/home05/drakedu/fast-sequencing-AI-imputation/EnHiC/EnHiC/fit.py", line 370, in predict
+    print('prediction shape: {}'.format(prediction.shape))
+AttributeError: 'NoneType' object has no attribute 'shape'
+Command exited with non-zero status 1
+	Command being timed: "python test_predict.py 21 400 2000000 GM12878-GSE115524-chr21.40kb.cool"
+	User time (seconds): 9.69
+	System time (seconds): 0.70
+	Percent of CPU this job got: 44%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 395980
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2050
+	Minor (reclaiming a frame) page faults: 94294
+	Voluntary context switches: 16743
+	Involuntary context switches: 59
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 272
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
