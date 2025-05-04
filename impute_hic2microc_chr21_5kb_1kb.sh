@@ -1,18 +1,17 @@
 #!/bin/bash
 #SBATCH --job-name=impute_hic2microc_chr21_5kb_1kb
 #SBATCH --account=kempner_undergrads
-#SBATCH --partition=kempner_requeue
+#SBATCH --partition=kempner
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=16
 #SBATCH --gpus-per-node=1
-#SBATCH --time=0-1:00
+#SBATCH --time=0-0:30
 #SBATCH --mem=32G
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=drakedu@college.harvard.edu
-#SBATCH --constraint=a100
 
 # Load Python.
 module load python
