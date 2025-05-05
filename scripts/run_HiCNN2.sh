@@ -44,15 +44,15 @@ python HiCNN2_package/HiCNN2_predict.py \
 # Step 4: Combine submatrices
 echo "Combining submatrices..."
 gtime -f "\
-user time: %U s\n\
-system time: %S s\n\
-elapsed: %E\n\
-CPU: %P\n\
-max memory: %M KB\n\
-inputs: %I\n\
-outputs: %O\n\
-major faults: %F\n\
-minor faults: %R\n\
+user: %U s\n\
+sys: %S s\n\
+wall: %E\n\
+cpu%%: %P\n\
+majflt: %D\n\
+minflt: %d\n\
+maxrss: %K kb\n\
+in: %I\n\
+out: %O\n\
 swaps: %W" \
 python HiCNN2_package/combine_subMats.py \
 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO}.npy \

@@ -3,7 +3,7 @@ import sys
 
 def main():
     if len(sys.argv) != 4:
-        print("Usage: python get_chr_sizes.py <input.mcool> <resolution> <output.sizes>")
+        sys.stderr.write("Usage: python get_chr_sizes.py <input.mcool> <resolution> <output_file>\n")
         sys.exit(1)
     
     clr = cooler.Cooler(sys.argv[1] + '::resolutions/' + sys.argv[2])

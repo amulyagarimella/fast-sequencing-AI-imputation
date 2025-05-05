@@ -4,8 +4,9 @@ from collections import defaultdict
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python hic_to_sparse.py <input.npy>")
+        sys.stderr.write("Usage: python hic_to_sparse.py <input.npy>\n")
         sys.exit(1)
+    
     
     mat = np.load(sys.argv[1])
     pixel_counts = defaultdict(float)
@@ -15,12 +16,13 @@ def main():
     
     # Aggregate counts for duplicate pixels
     for r, c, v in zip(rows, cols, data):
-        print("Duplicate pixel found at (", r, ",", c, ") with value", v)
+        duplicate_pixel_err = f"Duplicate pixel found at ({r}, {c}) with value {v}\n"
+        sys.stderr.write(duplicate_pixel_err)
         pixel_counts[(r, c)] += v
     
     # Output unique pixels
     for (r, c), v in pixel_counts.items():
-        print(f"{r}\t{c}\t{v}")
+        sys.stdout.write(f"{r}\t{c}\t{v}")
 
 if __name__ == "__main__":
     main()
