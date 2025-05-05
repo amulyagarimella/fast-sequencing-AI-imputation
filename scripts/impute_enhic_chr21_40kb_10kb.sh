@@ -21,7 +21,6 @@ cd EnHiC
 CHROM=21
 LEN_SIZE=400
 GENOMIC_DIST=2000000
-RAW_COOL_FILENAME="GM12878-GSE115524-chr21.40kb.cool"
 RAW_COOL_PATH="data/raw/${RAW_COOL_FILENAME}"
 INPUT_MCOOL="../data/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.chr21.mcool"
 PRETRAINED="pretrained_model/gen_model_${LEN_SIZE}"
@@ -34,13 +33,16 @@ sed -i 's|^raw_hic=.*|raw_hic = sys.argv[4] if len(sys.argv) > 4 else "Rao2014-G
 sed -i 's|^[[:space:]]*raw_hic = .*|    raw_hic = sys.argv[4] if len(sys.argv) > 4 else "Rao2014-GM12878-MboI-allreps-filtered.10kb.cool"|' test_predict.py
 
 mkdir -p data/raw
-if [ ! -f "$RAW_COOL_PATH" ]; then
-  cooler coarsen -k 4 "${INPUT_MCOOL}::resolutions/10000" -o "$RAW_COOL_PATH"
-  cooler balance "$RAW_COOL_PATH"
+possible_resolutions=$(cooler ls $INPUT_MCOOL)
+if ! echo "$possible_resolutions" | grep -q "40000"; then
+  cooler coarsen -k 4 "${INPUT_MCOOL}::resolutions/10000" --append
 fi
+
+cooler balance "${INPUT_MCOOL}::resolutions/40000"
+
+INPUT_MCOOL_40KB="${INPUT_MCOOL}::resolutions/40000"
 
 mkdir -p "$SAVED_MODEL"
 cp -r "$PRETRAINED"/* "$SAVED_MODEL/"
 
-python test_preprocessing.py "$CHROM" "$LEN_SIZE" "$GENOMIC_DIST" "$RAW_COOL_FILENAME"
-/usr/bin/time -v python test_predict.py "$CHROM" "$LEN_SIZE" "$GENOMIC_DIST" "$RAW_COOL_FILENAME"
+/usr/bin/time -v python test_predict.py "$CHROM" "$LEN_SIZE" "$GENOMIC_DIST" "$INPUT_MCOOL_40KB"

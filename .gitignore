@@ -3,3 +3,5 @@
 venvs/
 .DS_Store
 *venv*
+*.npy
+*.npz
