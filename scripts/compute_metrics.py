@@ -1,4 +1,5 @@
 import cooler
+import cooler.balance
 import numpy as np
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import peak_signal_noise_ratio as psnr
@@ -28,6 +29,7 @@ def check_cool_compatibility(cool1, cool2):
     }
 
 def load_contact_matrix(cool_path):
+    cooler.balance_cooler(cool_path)
     clr = cooler.Cooler(cool_path)
     matrix = clr.matrix(balance=True)[:]
     matrix = np.nan_to_num(matrix)
