@@ -15,6 +15,7 @@ def main():
     
     # Aggregate counts for duplicate pixels
     for r, c, v in zip(rows, cols, data):
+        print("Duplicate pixel found at (", r, ",", c, ") with value", v)
         pixel_counts[(r, c)] += v
     
     # Output unique pixels
