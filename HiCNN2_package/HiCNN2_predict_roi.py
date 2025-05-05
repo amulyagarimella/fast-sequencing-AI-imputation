@@ -29,14 +29,14 @@ required.add_argument('-m', '--file-best-model', type=str, metavar='FILE', requi
                         help='file name of the best model')
 required.add_argument('-r', '--down-ratio', type=int, default=16, metavar='N', required=True,
                         help='down sampling ratio, 16 means 1/16 (default: 16)')
-required.add_argument('-roi', '--file-roi-indices', type=str, metavar='FILE', required=True,
-                        help='file name of the ROI indices, npy format and shape=n1')
 optional.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA predicting')
 optional.add_argument('--HiC-max', type=int, default=100, metavar='N',
                         help='the maximum value of Hi-C contacts (default: 100)')
 optional.add_argument('--batch-size', type=int, default=128, metavar='N',
-                        help='input batch size for test (default: 128)')	
+                        help='input batch size for test (default: 128)')
+optional.add_argument('--roi-indices', type=str, metavar='FILE',
+                        help='file name of the ROI indices, npy format and shape=n1')
 args = parser.parse_args()
 use_cuda = not args.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
@@ -58,11 +58,16 @@ else:
     Net.load_state_dict(torch.load(args.file_best_model, map_location=device))
     
 low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
-test_loader = torch.utils.data.DataLoader(data.TensorDataset(torch.from_numpy(low_res_test), torch.from_numpy(np.zeros(low_res_test.shape[0]))), batch_size=args.batch_size, shuffle=False)
+
+if args.roi_indices is not None:
+    roi_indices = np.load(args.roi_indices)
+    test_loader = torch.utils.data.DataLoader(data.TensorDataset(torch.from_numpy(low_res_test), torch.from_numpy(roi_indices)), batch_size=args.batch_size, shuffle=False)
+else:
+    test_loader = torch.utils.data.DataLoader(data.TensorDataset(torch.from_numpy(low_res_test), torch.from_numpy(np.ones(low_res_test.shape[0], dtype=int))), batch_size=args.batch_size, shuffle=False)
+
 result = np.zeros((low_res_test.shape[0],1,28,28))
 
-roi_indices = np.load(args.file_roi_indices)
-for i, (data, _) in enumerate(test_loader):
+for i, (data, roi) in enumerate(test_loader):
     i1 = i * args.batch_size
     i2 = i1 + args.batch_size
     #print("i: ", i)
@@ -72,8 +77,11 @@ for i, (data, _) in enumerate(test_loader):
         i2 = low_res_test.shape[0]
     
     # Get ROI mask for current batch
-    batch_roi_mask = roi_indices[i1:i2]
-    #print("batch_roi_mask: ", batch_roi_mask)
+    #if args.roi_indices is not None:
+    batch_roi_mask = roi.numpy()
+    #else:
+    #    batch_roi_mask = np.ones(data.shape[0])
+    
     #print("data shape: ", data.shape)
     #print("batch_roi_mask shape: ", batch_roi_mask.shape)
     data2 = Variable(data).to(device)

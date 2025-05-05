@@ -34,15 +34,6 @@ python HiCNN2_package/get_HiCNN2_input_fromMat.py \
 
 # Step 3: Run prediction
 echo "Running HiCNN2 prediction..."
-python HiCNN2_package/HiCNN2_predict.py \
-    -f1 ${OUTPUT_DIR}${CHROM}.subMats.npy \
-    -f2 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO} \
-    -mid ${MODEL} \
-    -m HiCNN2_package/checkpoint/model_HiCNN2${MODEL}_${RATIO}.pt \
-    -r ${RATIO}
-
-# Step 4: Combine submatrices
-echo "Combining submatrices..."
 gtime -f "\
 %C   command line and arguments\n \
 %c   involuntary context switches\n \
@@ -56,14 +47,23 @@ gtime -f "\
 %U   user time in seconds\n \
 %w   voluntary context switches\n \
 %x   exit status of command" \
+python HiCNN2_package/HiCNN2_predict.py \
+    -f1 ${OUTPUT_DIR}${CHROM}.subMats.npy \
+    -f2 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO} \
+    -mid ${MODEL} \
+    -m HiCNN2_package/checkpoint/model_HiCNN2${MODEL}_${RATIO}.pt \
+    -r ${RATIO} \
+> ${OUTPUT_DIR}${CHROM}_predicted_hic.out \
+2> ${OUTPUT_DIR}${CHROM}_predicted_hic.err
+
+# Step 4: Combine submatrices
+echo "Combining submatrices..."
 python HiCNN2_package/combine_subMats.py \
 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO}.npy \
 ${OUTPUT_DIR}${CHROM}.index.npy \
 ${CHROM_LEN} \
 ${RESOLUTION} \
-${OUTPUT_DIR}${CHROM}_predicted_hic \
-> ${OUTPUT_DIR}${CHROM}_predicted_hic.out \
-2> ${OUTPUT_DIR}${CHROM}_predicted_hic.err
+${OUTPUT_DIR}${CHROM}_predicted_hic
 
 # Step 5: Convert to sparse
 echo "Converting to sparse..."
