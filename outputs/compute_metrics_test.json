@@ -1,0 +1,8 @@
+{
+    "Pearson Correlation (High=Better)": 1.0,
+    "Spearman Correlation (High=Better)": 1.0,
+    "PSNR (High=Better)": Infinity,
+    "SSIM (High=Better)": 1.0,
+    "MSE (Low=Better)": 0.0,
+    "MAE (Low=Better)": 0.0
+}

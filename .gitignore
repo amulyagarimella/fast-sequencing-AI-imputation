@@ -5,3 +5,5 @@ venvs/
 *venv*
 *.npy
 *.npz
+*.err
+*.out
