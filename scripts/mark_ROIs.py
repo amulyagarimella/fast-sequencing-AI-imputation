@@ -44,7 +44,6 @@ def main():
     elif method == "ridge": # ridge regression
         model = joblib.load("prediction_models/ridge_model_csc_40.joblib")
         features_csc = sparse.vstack([sparse.csc_matrix(np.squeeze(sub_mats[i]).flatten()) for i in diag_idx], format='csc')
-        print(features_csc.shape)
         preds = model.predict(features_csc)
         # ROIs are top n predicted
         top_n = int(top_percent*len(diag_idx))

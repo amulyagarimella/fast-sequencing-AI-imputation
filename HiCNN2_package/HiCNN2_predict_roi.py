@@ -84,11 +84,15 @@ for i, (data, roi) in enumerate(test_loader):
     
     #print("data shape: ", data.shape)
     #print("batch_roi_mask shape: ", batch_roi_mask.shape)
+
     data2 = Variable(data).to(device)
 
     # Only run prediction for ROI samples
-    roi_indices_in_batch = np.where(batch_roi_mask)[0]
-    if len(roi_indices_in_batch) > 0:
+    roi_indices_in_batch = np.arange(data.shape[0])
+    if args.roi_indices is not None:
+        roi_indices_in_batch = np.where(batch_roi_mask)[0]
+    
+    if args.roi_indices is not None and len(roi_indices_in_batch) > 0:
         roi_data = data2[roi_indices_in_batch]
         output = Net(roi_data)
         roi_result = output.cpu().data.numpy()
@@ -96,5 +100,10 @@ for i, (data, roi) in enumerate(test_loader):
         
         # Place ROI predictions in result array
         result[i1:i2,0,:,:][batch_roi_mask] = roi_result
+    else:
+        output = Net(data2)
+        resulti = output.cpu().data.numpy()
+        resulti = np.squeeze(resulti)
+        result[i1:i2,0,:,:] = resulti
 
 np.save(args.file_test_predicted, result)

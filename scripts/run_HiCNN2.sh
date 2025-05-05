@@ -13,7 +13,7 @@ CHROM_LEN=$3
 RESOLUTION=10000
 MODEL=3
 RATIO=16
-OUTPUT_DIR="outputs/imputed/HiCNN2/$(date +%Y-%m-%d_%H-%M-%S)/"
+OUTPUT_DIR="outputs/imputed/HiCNN2/full/$(date +%Y-%m-%d_%H-%M-%S)/"
 mkdir -p "${OUTPUT_DIR}"
 
 # Step 1: Extract contacts
