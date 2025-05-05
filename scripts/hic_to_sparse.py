@@ -3,12 +3,15 @@ import sys
 from collections import defaultdict
 
 def main():
-    if len(sys.argv) != 2:
-        sys.stderr.write("Usage: python hic_to_sparse.py <input.npy>\n")
+    verbose = False
+    if len(sys.argv) > 2 and sys.argv[2] == '--verbose':
+        verbose = True
+    elif len(sys.argv) != 2:
+        sys.stderr.write("Usage: python hic_to_sparse.py <input.npy> [--verbose]\n")
         sys.exit(1)
     
-    
     mat = np.load(sys.argv[1])
+
     pixel_counts = defaultdict(float)
     
     rows, cols = np.nonzero(mat)
@@ -16,8 +19,9 @@ def main():
     
     # Aggregate counts for duplicate pixels
     for r, c, v in zip(rows, cols, data):
-        duplicate_pixel_err = f"Duplicate pixel found at ({r}, {c}) with value {v}\n"
-        sys.stderr.write(duplicate_pixel_err)
+        if verbose:
+            duplicate_pixel_err = f"Duplicate pixel found at ({r}, {c}) with value {v}\n"
+            sys.stderr.write(duplicate_pixel_err)
         pixel_counts[(r, c)] += v
     
     # Output unique pixels
