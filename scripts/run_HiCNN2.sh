@@ -44,16 +44,18 @@ python HiCNN2_package/HiCNN2_predict.py \
 # Step 4: Combine submatrices
 echo "Combining submatrices..."
 gtime -f "\
-user: %U s\n\
-sys: %S s\n\
-wall: %E\n\
-cpu%%: %P\n\
-majflt: %D\n\
-minflt: %d\n\
-maxrss: %K kb\n\
-in: %I\n\
-out: %O\n\
-swaps: %W" \
+%C   command line and arguments\n \
+%c   involuntary context switches\n \
+%E   elapsed real time (wall clock) in [hour:]min:sec\n \
+%e   elapsed real time (wall clock) in seconds\n \
+%F   major page faults\n \
+%M   maximum resident set size in KB\n \
+%P   percent of CPU this job got\n \
+%R   minor page faults\n \
+%S   system (kernel) time in seconds\n \
+%U   user time in seconds\n \
+%w   voluntary context switches\n \
+%x   exit status of command" \
 python HiCNN2_package/combine_subMats.py \
 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO}.npy \
 ${OUTPUT_DIR}${CHROM}.index.npy \
