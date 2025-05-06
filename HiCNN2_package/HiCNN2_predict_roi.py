@@ -33,10 +33,14 @@ optional.add_argument('--no-cuda', action='store_true', default=False,
                         help='disables CUDA predicting')
 optional.add_argument('--HiC-max', type=int, default=100, metavar='N',
                         help='the maximum value of Hi-C contacts (default: 100)')
+optional.add_argument('--resolution', type=int, default=10000, metavar='N',
+                        help='resolution of Hi-C data (default: 10000)')
 optional.add_argument('--batch-size', type=int, default=128, metavar='N',
                         help='input batch size for test (default: 128)')
 optional.add_argument('--roi-indices', type=str, metavar='FILE',
                         help='file name of the ROI indices, npy format and shape=n1')
+optional.add_argument('--submat-indices', type=str, metavar='FILE',
+                        help='file name of the submatrix indices, npy format')
 args = parser.parse_args()
 use_cuda = not args.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
@@ -58,6 +62,20 @@ else:
     Net.load_state_dict(torch.load(args.file_best_model, map_location=device))
     
 low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
+
+# Load submatrix indices if provided
+submat_indices = None
+if args.submat_indices is not None:
+    submat_indices = np.load(args.submat_indices)
+
+# Validate required parameters when ROIs are specified
+if args.roi_indices is not None:
+    if args.submat_indices is None:
+        sys.stderr.write("Error: --submat-indices is required when using --roi-indices\n")
+        sys.exit(1)
+    if args.resolution is None:
+        sys.stderr.write("Error: --resolution is required when using --roi-indices\n")
+        sys.exit(1)
 
 if args.roi_indices is not None:
     roi_indices = np.load(args.roi_indices)
@@ -100,6 +118,27 @@ for i, (data, roi) in enumerate(test_loader):
         
         # Place ROI predictions in result array
         result[i1:i2,0,:,:][batch_roi_mask] = roi_result
+
+        # interpolate non-ROI predictions
+        non_roi_indices_in_batch = np.where(batch_roi_mask == 0)[0]
+        if len(non_roi_indices_in_batch) > 0:
+            # Compute expected hi-c contacts in non-ROI regions
+            # Use actual genomic positions from indices
+            bin1_start = submat_indices[non_roi_indices_in_batch + i1, 0]
+            bin2_start = submat_indices[non_roi_indices_in_batch + i1, 1]
+            offsets = np.arange(28)
+            
+            bin1 = bin1_start[:,None] + offsets[None,:]
+            bin2 = bin2_start[:,None] + offsets[None,:]
+
+            genomic_distance = np.abs(bin1[:,:,None] - bin2[:,None,:]) * args.resolution
+
+            # Expected contacts calculation based on:
+            # Lieberman-Aiden et al. (2009) Comprehensive mapping of long-range interactions
+            # reveals folding principles of the human genome. Science, 326(5950):289-293.
+            # Power-law exponent of -1.08 from Rao et al. (2014) Cell 159(7):1665-1680
+            expected_contacts = 1 / (genomic_distance / args.resolution)**1.08
+            result[i1:i2,0,:,:][batch_roi_mask == 0] = expected_contacts
     else:
         output = Net(data2)
         resulti = output.cpu().data.numpy()

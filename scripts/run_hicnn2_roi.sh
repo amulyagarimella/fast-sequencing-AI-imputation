@@ -78,9 +78,11 @@ gtime -f "\
 python HiCNN2_package/HiCNN2_predict_roi.py \
     -f1 ${OUTPUT_DIR}${CHROM}.subMats.npy \
     -f2 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO} \
-    -mid ${MODEL} \
     -m HiCNN2_package/checkpoint/model_HiCNN2${MODEL}_${RATIO}.pt \
     -r ${RATIO} \
+    --model ${MODEL} \
+    --submat-indices ${OUTPUT_DIR}${CHROM}.index.npy \
+    --resolution ${RESOLUTION} \
     ${ROIS_TO_INPUT} \
 > ${OUTPUT_DIR}${CHROM}_predicted_hic.out \
 2> ${OUTPUT_DIR}${CHROM}_predicted_hic.err
