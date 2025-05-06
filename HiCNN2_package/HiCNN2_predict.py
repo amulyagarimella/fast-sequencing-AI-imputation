@@ -63,9 +63,9 @@ for i, (data, _) in enumerate(test_loader):
 	resulti = np.squeeze(resulti)
 	i1 = i * args.batch_size
 	i2 = i1 + args.batch_size
-	print("i: ", i)
-	print("i1: ", i1)
-	print("i2: ", i2)
+	#print("i: ", i)
+	#print("i1: ", i1)
+	#print("i2: ", i2)
 	if i == int(low_res_test.shape[0]/args.batch_size):
 		i2 = low_res_test.shape[0]
 	result[i1:i2,0,:,:] = resulti

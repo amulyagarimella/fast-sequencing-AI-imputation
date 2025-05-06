@@ -12,9 +12,6 @@ from model import model1
 from model import model2
 from model import model3
 
-def interpolate ():
-    pass
-
 parser = argparse.ArgumentParser(description='HiCNN2 predicting process')
 parser._action_groups.pop()
 required = parser.add_argument_group('required arguments')
@@ -41,6 +38,10 @@ optional.add_argument('--roi-indices', type=str, metavar='FILE',
                         help='file name of the ROI indices, npy format and shape=n1')
 optional.add_argument('--submat-indices', type=str, metavar='FILE',
                         help='file name of the submatrix indices, npy format')
+optional.add_argument('--non-roi-method', type=str, default='expected', metavar='STR',
+                        help='interpolation method for non-ROI regions (default: expected)')
+
+
 args = parser.parse_args()
 use_cuda = not args.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
@@ -76,6 +77,9 @@ if args.roi_indices is not None:
     if args.resolution is None:
         sys.stderr.write("Error: --resolution is required when using --roi-indices\n")
         sys.exit(1)
+    if args.non_roi_method not in ['zero', 'lowres', 'expected']:
+        sys.stderr.write("Error: --non-roi-method must be one of zero, lowres, or expected\n")
+        sys.exit(1)
 
 if args.roi_indices is not None:
     roi_indices = np.load(args.roi_indices)
@@ -83,8 +87,32 @@ if args.roi_indices is not None:
 else:
     test_loader = torch.utils.data.DataLoader(data.TensorDataset(torch.from_numpy(low_res_test), torch.from_numpy(np.ones(low_res_test.shape[0], dtype=int))), batch_size=args.batch_size, shuffle=False)
 
-result = np.zeros((low_res_test.shape[0],1,28,28))
 
+# Interpolation methods
+def get_center_bins(non_roi, batch_start_idx):
+    return np.squeeze(low_res_test[non_roi + batch_start_idx, :, 6:-6, 6:-6])
+
+def expected_contacts(non_roi, batch_start_idx):
+    bin1_start = submat_indices[non_roi + batch_start_idx, 0]
+    bin2_start = submat_indices[non_roi + batch_start_idx, 1]
+    offsets = np.arange(28)
+    
+    bin1 = bin1_start[:,None] + offsets[None,:]
+    bin2 = bin2_start[:,None] + offsets[None,:]
+
+    genomic_distance = np.abs(bin1[:,:,None] - bin2[:,None,:]) * args.resolution
+
+    # Expected contacts calculation based on:
+    # Lieberman-Aiden et al. (2009) Comprehensive mapping of long-range interactions
+    # reveals folding principles of the human genome. Science, 326(5950):289-293.
+    # Power-law exponent of -1.08 from Rao et al. (2014) Cell 159(7):1665-1680
+    expected_contacts = 1 / (genomic_distance / args.resolution)**1.08
+    mean_orig_contacts = np.mean(low_res_test[non_roi + batch_start_idx,:,:,0], axis=(1,2))[:,None,None]
+
+    # NB pastis uses the mean of the original contacts to scale the expected contacts
+    return expected_contacts * mean_orig_contacts
+
+result = np.zeros((low_res_test.shape[0],1,28,28))
 for i, (data, roi) in enumerate(test_loader):
     i1 = i * args.batch_size
     i2 = i1 + args.batch_size
@@ -124,21 +152,16 @@ for i, (data, roi) in enumerate(test_loader):
         if len(non_roi_indices_in_batch) > 0:
             # Compute expected hi-c contacts in non-ROI regions
             # Use actual genomic positions from indices
-            bin1_start = submat_indices[non_roi_indices_in_batch + i1, 0]
-            bin2_start = submat_indices[non_roi_indices_in_batch + i1, 1]
-            offsets = np.arange(28)
-            
-            bin1 = bin1_start[:,None] + offsets[None,:]
-            bin2 = bin2_start[:,None] + offsets[None,:]
-
-            genomic_distance = np.abs(bin1[:,:,None] - bin2[:,None,:]) * args.resolution
-
-            # Expected contacts calculation based on:
-            # Lieberman-Aiden et al. (2009) Comprehensive mapping of long-range interactions
-            # reveals folding principles of the human genome. Science, 326(5950):289-293.
-            # Power-law exponent of -1.08 from Rao et al. (2014) Cell 159(7):1665-1680
-            expected_contacts = 1 / (genomic_distance / args.resolution)**1.08
-            result[i1:i2,0,:,:][batch_roi_mask == 0] = expected_contacts
+            if args.non_roi_method == 'expected':
+                expected = expected_contacts(non_roi_indices_in_batch, i1)
+                result[i1:i2,0,:,:][batch_roi_mask == 0] = expected
+            elif args.non_roi_method == 'lowres':
+                center_bins = get_center_bins(non_roi_indices_in_batch, i1)
+                result[i1:i2,0,:,:][batch_roi_mask == 0] = center_bins
+            elif args.non_roi_method == 'zero':
+                continue
+            else:
+                raise ValueError(f"Unknown interpolation method: {args.non_roi_method}")
     else:
         output = Net(data2)
         resulti = output.cpu().data.numpy()

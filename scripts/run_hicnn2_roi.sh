@@ -2,8 +2,13 @@
 
 # Input parameters
 
-if [ "$#" -lt 3 ] || [ "$#" -gt 4 ]; then
-    echo "Usage: $0 <mcool> <chrom> <chrom_len> [--roi]"
+if [ "$#" -lt 3 ] || [ "$#" -gt 7 ]; then
+    echo "Usage: $0 <mcool> <chrom> <chrom_len> [--roi] [--roi-sparsity <value>] [--roi-method <method>] [--interpolation <method>]"
+    echo "Options:"
+    echo "  --roi                  Enable ROI mode"
+    echo "  --roi-sparsity <val>   Set ROI sparsity threshold (default: 0.1)"
+    echo "  --roi-method <method>  ROI detection method (default: ridge)"
+    echo "  --interpolation <method>  Non-ROI interpolation method (default: lowres)"
     exit 1
 fi
 
@@ -11,23 +16,60 @@ MCCOOL=$1
 CHROM=$2
 CHROM_LEN=$3
 USE_ROI=0
-if [ "$#" -eq 4 ]; then
-    if [ "$4" = "--roi" ]; then
-        USE_ROI=1
-    else
-        echo "Unknown option: $4"
-        exit 1
-    fi
-fi
+ROI_SPARSITY=0.1
+ROI_METHOD="ridge"
+INTERPOLATION="lowres"
 RESOLUTION=10000
 MODEL=3
 RATIO=16
+
+# Parse optional arguments
+shift 3
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        --roi)
+            USE_ROI=1
+            shift
+            ;;
+        --roi-sparsity)
+            ROI_SPARSITY="$2"
+            shift 2
+            ;;
+        --roi-method)
+            ROI_METHOD="$2"
+            shift 2
+            ;;
+        --interpolation)
+            INTERPOLATION="$2"
+            shift 2
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
+
 if [ ${USE_ROI} -eq 1 ]; then
     OUTPUT_DIR="outputs/imputed/HiCNN2/roi/$(date +%Y-%m-%d_%H-%M-%S)/"
 else
     OUTPUT_DIR="outputs/imputed/HiCNN2/full/$(date +%Y-%m-%d_%H-%M-%S)/"
 fi
 mkdir -p "${OUTPUT_DIR}"
+
+# Log parameters
+echo "Parameters:" > "${OUTPUT_DIR}parameters.txt"
+echo "MCCOOL: ${MCCOOL}" >> "${OUTPUT_DIR}parameters.txt"
+echo "CHROM: ${CHROM}" >> "${OUTPUT_DIR}parameters.txt"
+echo "CHROM_LEN: ${CHROM_LEN}" >> "${OUTPUT_DIR}parameters.txt"
+echo "USE_ROI: ${USE_ROI}" >> "${OUTPUT_DIR}parameters.txt"
+echo "ROI_SPARSITY: ${ROI_SPARSITY}" >> "${OUTPUT_DIR}parameters.txt"
+echo "ROI_METHOD: ${ROI_METHOD}" >> "${OUTPUT_DIR}parameters.txt"
+echo "INTERPOLATION: ${INTERPOLATION}" >> "${OUTPUT_DIR}parameters.txt"
+echo "RESOLUTION: ${RESOLUTION}" >> "${OUTPUT_DIR}parameters.txt"
+echo "MODEL: ${MODEL}" >> "${OUTPUT_DIR}parameters.txt"
+echo "RATIO: ${RATIO}" >> "${OUTPUT_DIR}parameters.txt"
+echo "DATE: $(date)" >> "${OUTPUT_DIR}parameters.txt"
 
 # Step 1: Extract contacts
 echo "Extracting contacts..."
@@ -53,14 +95,17 @@ if [ ${USE_ROI} -eq 1 ]; then
         ${OUTPUT_DIR}${CHROM}.subMats.npy \
         ${OUTPUT_DIR}${CHROM}.index.npy \
         ${RESOLUTION} \
-        ${OUTPUT_DIR}${CHROM}.subMats_ROIs
+        ${OUTPUT_DIR}${CHROM}.subMats_ROIs \
+        --sparsity ${ROI_SPARSITY} \
+        --method ${ROI_METHOD}
 fi
 
 # Step 4: Run prediction
 ROIS_TO_INPUT=""
 if [ ${USE_ROI} -eq 1 ]; then
-    ROIS_TO_INPUT="--roi-indices ${OUTPUT_DIR}${CHROM}.subMats_ROIs.npy"
+    ROIS_TO_INPUT="--roi-indices ${OUTPUT_DIR}${CHROM}.subMats_ROIs.npy --non-roi-method ${INTERPOLATION}"
 fi
+
 echo "Running HiCNN2 prediction..."
 gtime -f "\
 %C   command line and arguments\n \
