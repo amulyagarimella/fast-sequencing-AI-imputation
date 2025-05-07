@@ -12,15 +12,21 @@ from tqdm import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 
-def check_cool_compatibility(cool1, cool2):
-    clr1 = cooler.Cooler(cool1)
-    clr2 = cooler.Cooler(cool2)
-
-    bin_size1 = clr1.binsize
-    bin_size2 = clr2.binsize
-
-    shape1 = clr1.shape
-    shape2 = clr2.shape
+def check_cool_compatibility(cool1, cool2, chr_num=None):
+    if chr_num:
+        clr1 = cooler.Cooler(cool1)
+        clr2 = cooler.Cooler(cool2)
+        bin_size1 = clr1.binsize
+        bin_size2 = clr2.binsize
+        shape1 = clr1.bins().fetch(f"chr{chr_num}").shape[0]
+        shape2 = clr2.bins().fetch(f"chr{chr_num}").shape[0]
+    else:
+        clr1 = cooler.Cooler(cool1)
+        clr2 = cooler.Cooler(cool2)
+        bin_size1 = clr1.binsize
+        bin_size2 = clr2.binsize
+        shape1 = clr1.shape
+        shape2 = clr2.shape
 
     compatible = (bin_size1 == bin_size2) and (shape1 == shape2)
 
@@ -156,7 +162,7 @@ def compare_cool_files(cool_file1, cool_file2, chunk_size=100, super_chunk_size=
     if chr_num:
         print(f"Processing chromosome: chr{chr_num}")
     
-    result = check_cool_compatibility(cool_file1, cool_file2)
+    result = check_cool_compatibility(cool_file1, cool_file2, chr_num)
     if not result["compatible"]:
         raise ValueError(
             f"You provided incompatible .cool files.\n"

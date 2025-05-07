@@ -141,19 +141,10 @@ ${CHROM_LEN} \
 ${RESOLUTION} \
 ${OUTPUT_DIR}${CHROM}_predicted_hic \
 
-# Step 6: Convert to sparse
-echo "Converting to sparse..."
-python  scripts/hic_to_sparse.py ${OUTPUT_DIR}${CHROM}_predicted_hic.npy > ${OUTPUT_DIR}${CHROM}_predicted.sparse
-
-# Step 7: Generate chromosome sizes if needed
-echo "Generating chromosome sizes..."
-python scripts/get_chr_sizes.py ${MCCOOL} ${RESOLUTION} ${OUTPUT_DIR}${CHROM}.sizes
-
-# Step 8: Convert to .cool
+# Step 6: Convert to .cool
 echo "Converting to .cool..."
-cooler load -f coo \
-    --count-as-float \
-    --assembly hg19 \
-    ${OUTPUT_DIR}${CHROM}.sizes:${RESOLUTION} \
-    ${OUTPUT_DIR}${CHROM}_predicted.sparse \
-    ${OUTPUT_DIR}${CHROM}_predicted.cool
+python scripts/npy_to_cool.py \
+    ${OUTPUT_DIR}${CHROM}_predicted_hic.npy \
+    ${OUTPUT_DIR}${CHROM}_predicted.cool \
+    --chrom ${CHROM} \
+    --resolution ${RESOLUTION}
