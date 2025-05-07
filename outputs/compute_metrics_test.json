@@ -1,6 +1,6 @@
 {
     "Pearson Correlation (High=Better)": 1.0,
-    "Spearman Correlation (High=Better)": 1.0,
+    "Spearman Correlation (High=Better)": 0.9999999999999998,
     "PSNR (High=Better)": Infinity,
     "SSIM (High=Better)": 1.0,
     "MSE (Low=Better)": 0.0,
