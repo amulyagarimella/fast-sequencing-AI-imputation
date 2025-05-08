@@ -3,7 +3,7 @@
 # Input parameters
 
 if [ "$#" -lt 3 ] || [ "$#" -gt 7 ]; then
-    echo "Usage: $0 <mcool> <chrom> <chrom_len> [--roi] [--roi-sparsity <value>] [--roi-method <method>] [--interpolation <method>]"
+    echo "Usage: $0 <mcool> <chrom_num> <chrom_len> [--roi] [--roi-sparsity <value>] [--roi-method <method>] [--interpolation <method>]"
     echo "Options:"
     echo "  --roi                  Enable ROI mode"
     echo "  --roi-sparsity <val>   Set ROI sparsity threshold (default: 0.1)"
@@ -146,5 +146,5 @@ echo "Converting to .cool..."
 python scripts/npy_to_cool.py \
     ${OUTPUT_DIR}${CHROM}_predicted_hic.npy \
     ${OUTPUT_DIR}${CHROM}_predicted.cool \
-    --chrom ${CHROM} \
+    --chrom "chr${CHROM}" \
     --resolution ${RESOLUTION}

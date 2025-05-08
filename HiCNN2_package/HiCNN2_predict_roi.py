@@ -61,8 +61,12 @@ if use_cuda:
     Net.load_state_dict(torch.load(args.file_best_model))
 else:
     Net.load_state_dict(torch.load(args.file_best_model, map_location=device))
-    
-low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
+
+# AG 2025-05-08: remove upscaling
+# HiC max
+#low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
+
+low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32))
 
 # Load submatrix indices if provided
 submat_indices = None
@@ -107,7 +111,9 @@ def expected_contacts(non_roi, batch_start_idx):
     # reveals folding principles of the human genome. Science, 326(5950):289-293.
     # Power-law exponent of -1.08 from Rao et al. (2014) Cell 159(7):1665-1680
     expected_contacts = 1 / (genomic_distance / args.resolution)**1.08
-    mean_orig_contacts = np.mean(low_res_test[non_roi + batch_start_idx,:,:,0], axis=(1,2))[:,None,None]
+    mean_orig_contacts = low_res_test[non_roi + batch_start_idx,:,6:-6,6:-6].triu().mean(axis=(1,2))[:,None,None]
+    print(mean_orig_contacts.shape)
+    print(expected_contacts.shape)
 
     # NB pastis uses the mean of the original contacts to scale the expected contacts
     return expected_contacts * mean_orig_contacts
