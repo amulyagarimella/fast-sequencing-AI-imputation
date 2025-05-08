@@ -140,13 +140,25 @@ def expected_contacts(non_roi, batch_start_idx):
     with np.errstate(divide='ignore', invalid='ignore'):
         expected = expected * np.where(genomic_distance > 0, 1/genomic_distance, 1)
     
-    # Set diagonals to HiC_max for true diagonal submatrices
+    # Set diagonals and edge pixels to HiC_max
     for i in range(expected.shape[0]):
-        if submat_indices[non_roi[i] + batch_start_idx, 0] == submat_indices[non_roi[i] + batch_start_idx, 1]:
+        # Get the genomic positions for this submatrix
+        x_start = submat_indices[non_roi[i] + batch_start_idx, 0]
+        y_start = submat_indices[non_roi[i] + batch_start_idx, 1]
+        
+        # True diagonal submatrix
+        if x_start == y_start:
             np.fill_diagonal(expected[i], args.HiC_max)
-            np.fill_diagonal(expected[i,1:,:], args.HiC_max)
-            np.fill_diagonal(expected[i,:,1:], args.HiC_max)
-            
+            #np.fill_diagonal(expected[i,1:,:], args.HiC_max)
+            #np.fill_diagonal(expected[i,:,1:], args.HiC_max)
+        # Adjacent submatrix (within 1 bin)
+        # elif abs(x_start - y_start) == 1:
+        #     # Set corner pixels that connect to diagonal
+        #     if x_start < y_start:  # Below diagonal
+        #         expected[i,0,-1] = args.HiC_max  # Top-right pixel
+        #     else:  # Above diagonal
+        #         expected[i,-1,0] = args.HiC_max  # Bottom-left pixel
+                
     return expected
 
 result = np.zeros((low_res_test.shape[0],1,28,28))
