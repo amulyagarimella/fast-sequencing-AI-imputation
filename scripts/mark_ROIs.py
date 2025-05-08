@@ -13,8 +13,9 @@ def main():
     parser.add_argument('resolution', type=int, help='Resolution in bp')
     parser.add_argument('output_prefix', help='Output prefix for ROI indices file')
     parser.add_argument('--sparsity', type=float, default=0.1, help='ROI sparsity threshold (default: 0.1)')
-    parser.add_argument('--method', default='ridge', choices=['ridge', 'random'], 
+    parser.add_argument('--method', default='ridge', choices=['ridge', 'random', 'elasticnet', 'lasso'], 
                         help='ROI detection method (default: ridge)')
+    parser.add_argument('--downsample', type=int, default=1, help='Downsample factor (default: 1)')
 
     args = parser.parse_args()
 
@@ -29,13 +30,35 @@ def main():
     np.random.seed(42)
 
     diag_idx = np.where(indices[:,0] == indices[:,1])[0]
+    features_csc = sparse.vstack([sparse.csc_matrix(np.squeeze(sub_mats[i]).flatten()) for i in diag_idx], format='csc')
+
     if args.method == "random":
         np.random.shuffle(diag_idx)
         roi_flags[diag_idx[:int(args.sparsity*len(diag_idx))]] = True
     elif args.method == "ridge": # ridge regression
         model = joblib.load("prediction_models/ridge_model_csc_40.joblib")
-        features_csc = sparse.vstack([sparse.csc_matrix(np.squeeze(sub_mats[i]).flatten()) for i in diag_idx], format='csc')
         preds = model.predict(features_csc)
+        # ROIs are top n predicted
+        top_n = int(args.sparsity*len(diag_idx))
+        top_idx = np.argsort(preds)[::-1][:top_n]
+        roi_flags[diag_idx[top_idx]] = True
+    elif args.method == "elasticnet":
+        model = joblib.load("prediction_models/elasticnet_model_csc_40.joblib")
+        preds = model.predict(features_csc)
+        # ROIs are top n predicted
+        top_n = int(args.sparsity*len(diag_idx))
+        top_idx = np.argsort(preds)[::-1][:top_n]
+        roi_flags[diag_idx[top_idx]] = True
+    elif args.method == "lasso":
+        model = joblib.load("prediction_models/lasso_model_csc_40.joblib")
+        preds = model.predict(features_csc)
+        # ROIs are top n predicted
+        top_n = int(args.sparsity*len(diag_idx))
+        top_idx = np.argsort(preds)[::-1][:top_n]
+        roi_flags[diag_idx[top_idx]] = True
+    elif args.method == "logistic":
+        model = joblib.load("prediction_models/logistic_model_csc_40.joblib")
+        preds = model.predict_proba(features_csc)[:,1]
         # ROIs are top n predicted
         top_n = int(args.sparsity*len(diag_idx))
         top_idx = np.argsort(preds)[::-1][:top_n]
