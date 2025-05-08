@@ -40,7 +40,8 @@ optional.add_argument('--submat-indices', type=str, metavar='FILE',
                         help='file name of the submatrix indices, npy format')
 optional.add_argument('--non-roi-method', type=str, default='expected', metavar='STR',
                         help='interpolation method for non-ROI regions (default: expected)')
-
+optional.add_argument('--apply-down-ratio', action='store_true', default=False,
+                        help='apply downscaling ratio to test data')
 
 args = parser.parse_args()
 use_cuda = not args.no_cuda and torch.cuda.is_available()
@@ -62,11 +63,10 @@ if use_cuda:
 else:
     Net.load_state_dict(torch.load(args.file_best_model, map_location=device))
 
-# AG 2025-05-08: remove upscaling
-# HiC max
-#low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
-
-low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32))
+if args.apply_down_ratio:
+    low_res_test = np.minimum(args.HiC_max, np.load(args.file_test_data).astype(np.float32) * args.down_ratio)
+else:
+    low_res_test = np.load(args.file_test_data).astype(np.float32)
 
 # Load submatrix indices if provided
 submat_indices = None

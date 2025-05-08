@@ -9,6 +9,8 @@ if [ "$#" -lt 3 ] || [ "$#" -gt 7 ]; then
     echo "  --roi-sparsity <val>   Set ROI sparsity threshold (default: 0.1)"
     echo "  --roi-method <method>  ROI detection method (default: ridge)"
     echo "  --interpolation <method>  Non-ROI interpolation method (default: lowres)"
+    echo "  --ratio <value>        Set HiCNN2 downscaling ratio (default: 16)"
+    echo "  --apply-down-ratio     Apply downscaling ratio to test data (default: false)"
     exit 1
 fi
 
@@ -22,6 +24,7 @@ INTERPOLATION="lowres"
 RESOLUTION=10000
 MODEL=3
 RATIO=16
+APPLY_DOWN_RATIO=0
 
 # Parse optional arguments
 shift 3
@@ -42,6 +45,10 @@ while [ "$#" -gt 0 ]; do
         --interpolation)
             INTERPOLATION="$2"
             shift 2
+            ;;
+        --apply-down-ratio)
+            APPLY_DOWN_RATIO=1
+            shift
             ;;
         *)
             echo "Unknown option: $1"
@@ -68,7 +75,8 @@ echo "ROI_METHOD: ${ROI_METHOD}" >> "${OUTPUT_DIR}parameters.txt"
 echo "INTERPOLATION: ${INTERPOLATION}" >> "${OUTPUT_DIR}parameters.txt"
 echo "RESOLUTION: ${RESOLUTION}" >> "${OUTPUT_DIR}parameters.txt"
 echo "MODEL: ${MODEL}" >> "${OUTPUT_DIR}parameters.txt"
-echo "RATIO: ${RATIO}" >> "${OUTPUT_DIR}parameters.txt"
+echo "RATIO: ${RATIO}" >> "${OUTPUT_DIR}parameters.txt" 
+echo "APPLY_DOWN_RATIO: ${APPLY_DOWN_RATIO}" >> "${OUTPUT_DIR}parameters.txt"
 echo "DATE: $(date)" >> "${OUTPUT_DIR}parameters.txt"
 
 # Step 1: Extract contacts
@@ -125,6 +133,7 @@ python HiCNN2_package/HiCNN2_predict_roi.py \
     -f2 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO} \
     -m HiCNN2_package/checkpoint/model_HiCNN2${MODEL}_${RATIO}.pt \
     -r ${RATIO} \
+    --apply-down-ratio \
     --model ${MODEL} \
     --submat-indices ${OUTPUT_DIR}${CHROM}.index.npy \
     --resolution ${RESOLUTION} \
