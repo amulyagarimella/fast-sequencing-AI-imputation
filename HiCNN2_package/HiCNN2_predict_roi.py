@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+import pandas as pd
 import pickle
 #import model
 import argparse
@@ -42,10 +43,27 @@ optional.add_argument('--non-roi-method', type=str, default='expected', metavar=
                         help='interpolation method for non-ROI regions (default: expected)')
 optional.add_argument('--apply-down-ratio', action='store_true', default=False,
                         help='apply downscaling ratio to test data')
+optional.add_argument('--expected-values', type=str, metavar='FILE',
+                        help='path to TSV file with expected contact frequencies')
 
 args = parser.parse_args()
 use_cuda = not args.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda:0" if use_cuda else "cpu")
+
+if hasattr(args, 'expected_values') and args.expected_values is not None:
+    # Preload expected values once
+    expected_df = pd.read_csv(args.expected_values, sep='\t')
+    expected_df = expected_df[expected_df['region1'] == "chr21"]
+    
+    # Create direct mapping from distance bins to counts
+    expected_dict = dict(zip(
+        expected_df['dist'].astype(int).values,  
+        expected_df['count.avg'].values
+    ))
+    
+    # Get all unique distances and max distance for validation
+    all_distances = expected_df['dist'].astype(int).values
+    max_distance = all_distances.max()
 
 if args.model == 1:
 	print("Using HiCNN2-1...")
@@ -84,6 +102,10 @@ if args.roi_indices is not None:
     if args.non_roi_method not in ['zero', 'lowres', 'expected']:
         sys.stderr.write("Error: --non-roi-method must be one of zero, lowres, or expected\n")
         sys.exit(1)
+    if args.non_roi_method == 'expected' and not hasattr(args, 'expected_values'):
+        sys.stderr.write("Error: --expected-values is required when --non-roi-method is expected\n")
+        sys.exit(1)
+
 
 if args.roi_indices is not None:
     roi_indices = np.load(args.roi_indices)
@@ -103,20 +125,29 @@ def expected_contacts(non_roi, batch_start_idx):
     
     bin1 = bin1_start[:,None] + offsets[None,:]
     bin2 = bin2_start[:,None] + offsets[None,:]
-
-    genomic_distance = np.abs(bin1[:,:,None] - bin2[:,None,:]) * args.resolution
-
-    # Expected contacts calculation based on:
-    # Lieberman-Aiden et al. (2009) Comprehensive mapping of long-range interactions
-    # reveals folding principles of the human genome. Science, 326(5950):289-293.
-    # Power-law exponent of -1.08 from Rao et al. (2014) Cell 159(7):1665-1680
-    expected_contacts = 1 / (genomic_distance / args.resolution)**1.08
-    mean_orig_contacts = low_res_test[non_roi + batch_start_idx,:,6:-6,6:-6].triu().mean(axis=(1,2))[:,None,None]
-    print(mean_orig_contacts.shape)
-    print(expected_contacts.shape)
-
-    # NB pastis uses the mean of the original contacts to scale the expected contacts
-    return expected_contacts * mean_orig_contacts
+    genomic_distance = np.abs(bin1[:,:,None] - bin2[:,None,:])
+    
+    # Vectorized lookup of expected values
+    expected = np.zeros_like(genomic_distance, dtype=np.float32)
+    for dist in expected_dict.keys():
+        mask = (genomic_distance == dist)
+        expected[mask] = expected_dict[dist]
+    
+    # Handle distances beyond max_distance
+    expected[genomic_distance > max_distance] = expected_dict[max_distance]
+    
+    # Multiply by 1/genomic_distance (avoid division by zero)
+    with np.errstate(divide='ignore', invalid='ignore'):
+        expected = expected * np.where(genomic_distance > 0, 1/genomic_distance, 1)
+    
+    # Set diagonals to HiC_max for true diagonal submatrices
+    for i in range(expected.shape[0]):
+        if submat_indices[non_roi[i] + batch_start_idx, 0] == submat_indices[non_roi[i] + batch_start_idx, 1]:
+            np.fill_diagonal(expected[i], args.HiC_max)
+            np.fill_diagonal(expected[i,1:,:], args.HiC_max)
+            np.fill_diagonal(expected[i,:,1:], args.HiC_max)
+            
+    return expected
 
 result = np.zeros((low_res_test.shape[0],1,28,28))
 for i, (data, roi) in enumerate(test_loader):

@@ -2,13 +2,14 @@
 
 # Input parameters
 
-if [ "$#" -lt 3 ] || [ "$#" -gt 7 ]; then
-    echo "Usage: $0 <mcool> <chrom_num> <chrom_len> [--roi] [--roi-sparsity <value>] [--roi-method <method>] [--interpolation <method>]"
+if [ "$#" -lt 3 ] || [ "$#" -gt 9 ]; then
+    echo "Usage: $0 <mcool> <chrom_num> <chrom_len> [--roi] [--roi-sparsity <value>] [--roi-method <method>] [--interpolation <method>] [--expected <file>]"
     echo "Options:"
     echo "  --roi                  Enable ROI mode"
     echo "  --roi-sparsity <val>   Set ROI sparsity threshold (default: 0.1)"
     echo "  --roi-method <method>  ROI detection method (default: ridge)"
     echo "  --interpolation <method>  Non-ROI interpolation method (default: lowres)"
+    echo "  --expected <file>      Path to expected values TSV (required for 'expected' interpolation)"
     echo "  --ratio <value>        Set HiCNN2 downscaling ratio (default: 16)"
     echo "  --apply-down-ratio     Apply downscaling ratio to test data (default: false)"
     exit 1
@@ -21,6 +22,7 @@ USE_ROI=0
 ROI_SPARSITY=0.1
 ROI_METHOD="ridge"
 INTERPOLATION="lowres"
+EXPECTED_VALUES=""
 RESOLUTION=10000
 MODEL=3
 RATIO=16
@@ -46,6 +48,10 @@ while [ "$#" -gt 0 ]; do
             INTERPOLATION="$2"
             shift 2
             ;;
+        --expected)
+            EXPECTED_VALUES="$2"
+            shift 2
+            ;;
         --apply-down-ratio)
             APPLY_DOWN_RATIO=1
             shift
@@ -57,8 +63,14 @@ while [ "$#" -gt 0 ]; do
     esac
 done
 
+# Validate interpolation method
+if [ "$INTERPOLATION" = "expected" ] && [ -z "$EXPECTED_VALUES" ]; then
+    echo "Error: --expected must be specified when using 'expected' interpolation"
+    exit 1
+fi
+
 if [ ${USE_ROI} -eq 1 ]; then
-    OUTPUT_DIR="outputs/imputed/HiCNN2/roi/$(date +%Y-%m-%d_%H-%M-%S)/"
+    OUTPUT_DIR="outputs/imputed/HiCNN2/roi/${INTERPOLATION}/$(date +%Y-%m-%d_%H-%M-%S)/"
 else
     OUTPUT_DIR="outputs/imputed/HiCNN2/full/$(date +%Y-%m-%d_%H-%M-%S)/"
 fi
@@ -73,6 +85,7 @@ echo "USE_ROI: ${USE_ROI}" >> "${OUTPUT_DIR}parameters.txt"
 echo "ROI_SPARSITY: ${ROI_SPARSITY}" >> "${OUTPUT_DIR}parameters.txt"
 echo "ROI_METHOD: ${ROI_METHOD}" >> "${OUTPUT_DIR}parameters.txt"
 echo "INTERPOLATION: ${INTERPOLATION}" >> "${OUTPUT_DIR}parameters.txt"
+echo "EXPECTED_VALUES: ${EXPECTED_VALUES}" >> "${OUTPUT_DIR}parameters.txt"
 echo "RESOLUTION: ${RESOLUTION}" >> "${OUTPUT_DIR}parameters.txt"
 echo "MODEL: ${MODEL}" >> "${OUTPUT_DIR}parameters.txt"
 echo "RATIO: ${RATIO}" >> "${OUTPUT_DIR}parameters.txt" 
@@ -133,10 +146,12 @@ python HiCNN2_package/HiCNN2_predict_roi.py \
     -f2 ${OUTPUT_DIR}${CHROM}.subMats_HiCNN2${MODEL}_${RATIO} \
     -m HiCNN2_package/checkpoint/model_HiCNN2${MODEL}_${RATIO}.pt \
     -r ${RATIO} \
-    --apply-down-ratio \
     --model ${MODEL} \
     --submat-indices ${OUTPUT_DIR}${CHROM}.index.npy \
     --resolution ${RESOLUTION} \
+    --non-roi-method ${INTERPOLATION} \
+    ${EXPECTED_VALUES:+--expected-values "$EXPECTED_VALUES"} \
+    ${APPLY_DOWN_RATIO:+--apply-down-ratio} \
     ${ROIS_TO_INPUT} \
 > ${OUTPUT_DIR}${CHROM}_predicted_hic.out \
 2> ${OUTPUT_DIR}${CHROM}_predicted_hic.err
