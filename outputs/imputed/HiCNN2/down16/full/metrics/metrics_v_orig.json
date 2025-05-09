@@ -1,0 +1,29 @@
+{
+    "base_file": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000",
+    "comparisons": {
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/full/2025-05-08_19-23-52/21_predicted.cool": {
+            "Pearson Correlation": 0.7490006856411499,
+            "Spearman Correlation": 0.4982515886281527,
+            "PSNR": -4.615795190371149,
+            "SSIM": 0.6500636663806074,
+            "MSE": 2.894539756894243,
+            "MAE": 0.10573446319526858
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/full/2025-05-08_20-00-37/21_predicted.cool": {
+            "Pearson Correlation": 0.7509623926127268,
+            "Spearman Correlation": 0.4994302262585071,
+            "PSNR": -4.538685468028109,
+            "SSIM": 0.650135305365529,
+            "MSE": 2.8436002700676006,
+            "MAE": 0.1055209721076965
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/full/2025-05-08_20-33-13/21_predicted.cool": {
+            "Pearson Correlation": 0.7475591690842404,
+            "Spearman Correlation": 0.4979340366537834,
+            "PSNR": -4.665771999081862,
+            "SSIM": 0.6501405469335378,
+            "MSE": 2.9280413118546083,
+            "MAE": 0.10786291158851899
+        }
+    }
+}
