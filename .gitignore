@@ -8,3 +8,4 @@ venvs/
 *.cool
 *.mcool
 *tmp*
+*.sparse
