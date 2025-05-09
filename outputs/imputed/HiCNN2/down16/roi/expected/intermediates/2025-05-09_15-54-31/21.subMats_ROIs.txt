@@ -1,0 +1,5 @@
+Num ROIs: 811 of 1300
+Final sparsity: 0.6238461538461538
+Method used to calculate ROIs: elasticnet
+Sparsity threshold: 0.5
+Intermediate results saved to outputs/imputed/HiCNN2/down16/roi/expected/2025-05-09_15-54-31/21.subMats_ROIs_intermediates.npz

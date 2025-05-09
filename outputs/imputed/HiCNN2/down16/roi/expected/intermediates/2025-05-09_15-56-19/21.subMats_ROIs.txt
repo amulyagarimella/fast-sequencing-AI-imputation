@@ -1,0 +1,5 @@
+Num ROIs: 828 of 1300
+Final sparsity: 0.6369230769230769
+Method used to calculate ROIs: lasso
+Sparsity threshold: 0.5
+Intermediate results saved to outputs/imputed/HiCNN2/down16/roi/expected/2025-05-09_15-56-19/21.subMats_ROIs_intermediates.npz

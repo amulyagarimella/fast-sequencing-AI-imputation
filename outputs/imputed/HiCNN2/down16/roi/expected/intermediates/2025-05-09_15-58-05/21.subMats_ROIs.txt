@@ -1,0 +1,5 @@
+Num ROIs: 484 of 1300
+Final sparsity: 0.3723076923076923
+Method used to calculate ROIs: logreg
+Sparsity threshold: 0.5
+Intermediate results saved to outputs/imputed/HiCNN2/down16/roi/expected/2025-05-09_15-58-05/21.subMats_ROIs_intermediates.npz

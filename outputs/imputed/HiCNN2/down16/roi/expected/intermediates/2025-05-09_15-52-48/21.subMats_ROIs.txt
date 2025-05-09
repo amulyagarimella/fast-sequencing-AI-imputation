@@ -1,0 +1,5 @@
+Num ROIs: 829 of 1300
+Final sparsity: 0.6376923076923077
+Method used to calculate ROIs: ridge
+Sparsity threshold: 0.5
+Intermediate results saved to outputs/imputed/HiCNN2/down16/roi/expected/2025-05-09_15-52-48/21.subMats_ROIs_intermediates.npz

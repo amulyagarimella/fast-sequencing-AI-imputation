@@ -118,7 +118,8 @@ if [ ${USE_ROI} -eq 1 ]; then
         ${OUTPUT_DIR}${CHROM}.subMats_ROIs \
         --sparsity ${ROI_SPARSITY} \
         --method ${ROI_METHOD} \
-        ${APPLY_DOWN_RATIO:+--downsample ${RATIO}}
+        ${APPLY_DOWN_RATIO:+--downsample ${RATIO}} \
+        --save-intermediates
 fi
 
 # Step 4: Run prediction
