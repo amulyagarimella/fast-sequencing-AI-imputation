@@ -1,0 +1,1849 @@
+{
+    "outputs/imputed/HiCNN2/down16/roi/lowres/summary": {
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-33-40": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:33:40 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 424266,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:50.20",
+                "elapsed real time (wall clock) in seconds": 50.2,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8482832,
+                "percent of CPU this job got": "378%",
+                "minor page faults": 1591006,
+                "system (kernel) time in seconds": 6.28,
+                "user time in seconds": 183.81,
+                "voluntary context switches": 746,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6506512099232675,
+                    "Spearman Correlation": 0.37397178190745445,
+                    "PSNR": -7.362370990216457,
+                    "SSIM": 0.6450373216732447,
+                    "MSE": 5.448000001466663,
+                    "MAE": 0.15431413558957388
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-11-10": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:11:10 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 610314,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:33.51",
+                "elapsed real time (wall clock) in seconds": 33.51,
+                "major page faults": 3,
+                "maximum resident set size in KB": 6844288,
+                "percent of CPU this job got": "353%",
+                "minor page faults": 1014703,
+                "system (kernel) time in seconds": 5.75,
+                "user time in seconds": 112.86,
+                "voluntary context switches": 747,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6433972865118295,
+                    "Spearman Correlation": 0.3615181470329708,
+                    "PSNR": -7.580087415443742,
+                    "SSIM": 0.6443405744417607,
+                    "MSE": 5.72807560426159,
+                    "MAE": 0.1590233603158018
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-47-07": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:47:07 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 280107,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:28.86",
+                "elapsed real time (wall clock) in seconds": 28.86,
+                "major page faults": 2,
+                "maximum resident set size in KB": 8029824,
+                "percent of CPU this job got": "370%",
+                "minor page faults": 848668,
+                "system (kernel) time in seconds": 3.6,
+                "user time in seconds": 103.24,
+                "voluntary context switches": 977,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.643577269930124,
+                    "Spearman Correlation": 0.36189815157859956,
+                    "PSNR": -7.593891538534407,
+                    "SSIM": 0.6443365938996833,
+                    "MSE": 5.7463113547971165,
+                    "MAE": 0.1591260267039859
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-39-24": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:39:24 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 546856,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:11.33",
+                "elapsed real time (wall clock) in seconds": 71.33,
+                "major page faults": 2,
+                "maximum resident set size in KB": 9514192,
+                "percent of CPU this job got": "379%",
+                "minor page faults": 1980678,
+                "system (kernel) time in seconds": 7.82,
+                "user time in seconds": 262.67,
+                "voluntary context switches": 46,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6652517397505173,
+                    "Spearman Correlation": 0.4034357225676128,
+                    "PSNR": -6.9310438950454065,
+                    "SSIM": 0.6462561034872539,
+                    "MSE": 4.932923602778061,
+                    "MAE": 0.14317221997868665
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-51-29": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:51:29 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 650315,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:05.06",
+                "elapsed real time (wall clock) in seconds": 65.06,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9185664,
+                "percent of CPU this job got": "377%",
+                "minor page faults": 1879522,
+                "system (kernel) time in seconds": 7.85,
+                "user time in seconds": 237.88,
+                "voluntary context switches": 1068,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6682991729233752,
+                    "Spearman Correlation": 0.4034516949186321,
+                    "PSNR": -6.802469437246535,
+                    "SSIM": 0.6463155306625747,
+                    "MSE": 4.78902323060782,
+                    "MAE": 0.14367212278936695
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-56-52": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:56:52 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 514884,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:11.74",
+                "elapsed real time (wall clock) in seconds": 71.74,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9690848,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 2125714,
+                "system (kernel) time in seconds": 8.17,
+                "user time in seconds": 265.28,
+                "voluntary context switches": 1076,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6630370446400877,
+                    "Spearman Correlation": 0.39682819979667133,
+                    "PSNR": -7.012314574396148,
+                    "SSIM": 0.6461059662118401,
+                    "MSE": 5.026103845859985,
+                    "MAE": 0.14610009120350262
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-57-08": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:57:08 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 914126,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:35.41",
+                "elapsed real time (wall clock) in seconds": 95.41,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8289888,
+                "percent of CPU this job got": "374%",
+                "minor page faults": 2632119,
+                "system (kernel) time in seconds": 11.92,
+                "user time in seconds": 345.51,
+                "voluntary context switches": 753,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7212128738966544,
+                    "Spearman Correlation": 0.47557799384323773,
+                    "PSNR": -5.375055575058617,
+                    "SSIM": 0.6490362604439373,
+                    "MSE": 3.447510181961965,
+                    "MAE": 0.11558759480198243
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-46-08": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:46:08 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 736098,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:21.75",
+                "elapsed real time (wall clock) in seconds": 81.75,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8765152,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 2230137,
+                "system (kernel) time in seconds": 9.17,
+                "user time in seconds": 301.88,
+                "voluntary context switches": 744,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6793624216900325,
+                    "Spearman Correlation": 0.42724907800429246,
+                    "PSNR": -6.589711024271293,
+                    "SSIM": 0.6472996294387529,
+                    "MSE": 4.56006572665505,
+                    "MAE": 0.13538052861364946
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-44-16": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:44:16 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 559869,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:28.31",
+                "elapsed real time (wall clock) in seconds": 88.31,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9064480,
+                "percent of CPU this job got": "383%",
+                "minor page faults": 2284641,
+                "system (kernel) time in seconds": 8.45,
+                "user time in seconds": 330.56,
+                "voluntary context switches": 748,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7190048577824156,
+                    "Spearman Correlation": 0.47133634515562506,
+                    "PSNR": -5.427327751027504,
+                    "SSIM": 0.6489126170048115,
+                    "MSE": 3.4892555270610495,
+                    "MAE": 0.1170352825417961
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-54-59": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:54:59 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 395220,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:01.67",
+                "elapsed real time (wall clock) in seconds": 61.67,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9010128,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 1674048,
+                "system (kernel) time in seconds": 6.31,
+                "user time in seconds": 229.16,
+                "voluntary context switches": 849,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6708684298305247,
+                    "Spearman Correlation": 0.4119334888987206,
+                    "PSNR": -6.716343014113791,
+                    "SSIM": 0.6463772452929799,
+                    "MSE": 4.694985998183813,
+                    "MAE": 0.14059116864645504
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-21-16": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:21:16 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 476953,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:50.24",
+                "elapsed real time (wall clock) in seconds": 50.24,
+                "major page faults": 2,
+                "maximum resident set size in KB": 8132640,
+                "percent of CPU this job got": "375%",
+                "minor page faults": 1324598,
+                "system (kernel) time in seconds": 6.02,
+                "user time in seconds": 182.58,
+                "voluntary context switches": 0,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6504822341805526,
+                    "Spearman Correlation": 0.37587086210388676,
+                    "PSNR": -7.351255770241886,
+                    "SSIM": 0.6450176608457444,
+                    "MSE": 5.434074360073298,
+                    "MAE": 0.1535308918807891
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-14-02": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:14:02 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 634495,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:20.88",
+                "elapsed real time (wall clock) in seconds": 80.88,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8522752,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 2334078,
+                "system (kernel) time in seconds": 9.11,
+                "user time in seconds": 298.94,
+                "voluntary context switches": 744,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6798644350752959,
+                    "Spearman Correlation": 0.4285579945924007,
+                    "PSNR": -6.551429472587069,
+                    "SSIM": 0.6472536891458457,
+                    "MSE": 4.520046964372609,
+                    "MAE": 0.13427021912536397
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-31-26": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:31:26 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 781540,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:06.81",
+                "elapsed real time (wall clock) in seconds": 66.81,
+                "major page faults": 3,
+                "maximum resident set size in KB": 7565008,
+                "percent of CPU this job got": "371%",
+                "minor page faults": 1940573,
+                "system (kernel) time in seconds": 9.35,
+                "user time in seconds": 238.83,
+                "voluntary context switches": 1088,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.668696399850681,
+                    "Spearman Correlation": 0.40699651527949365,
+                    "PSNR": -6.7674169037497975,
+                    "SSIM": 0.6462808563515987,
+                    "MSE": 4.7505259016984915,
+                    "MAE": 0.14215229357857034
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-44-05": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:44:05 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 470367,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:28.69",
+                "elapsed real time (wall clock) in seconds": 88.69,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9070576,
+                "percent of CPU this job got": "384%",
+                "minor page faults": 2268155,
+                "system (kernel) time in seconds": 8.18,
+                "user time in seconds": 333.09,
+                "voluntary context switches": 746,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7192017519827271,
+                    "Spearman Correlation": 0.47472848544070795,
+                    "PSNR": -5.4466652251985614,
+                    "SSIM": 0.6490320021656857,
+                    "MSE": 3.504826488991482,
+                    "MAE": 0.11595091464981068
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-27-41": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:27:41 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 461704,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:03.61",
+                "elapsed real time (wall clock) in seconds": 63.61,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9008576,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 1863786,
+                "system (kernel) time in seconds": 7.12,
+                "user time in seconds": 235.24,
+                "voluntary context switches": 746,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6720144325495385,
+                    "Spearman Correlation": 0.4125594610636788,
+                    "PSNR": -6.676747091762014,
+                    "SSIM": 0.6464358889676185,
+                    "MSE": 4.652374955432934,
+                    "MAE": 0.14039381084845473
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-02-41": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:02:41 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 663916,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:14.11",
+                "elapsed real time (wall clock) in seconds": 74.11,
+                "major page faults": 7,
+                "maximum resident set size in KB": 8975856,
+                "percent of CPU this job got": "378%",
+                "minor page faults": 2295715,
+                "system (kernel) time in seconds": 9.59,
+                "user time in seconds": 270.67,
+                "voluntary context switches": 1090,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6657862984400739,
+                    "Spearman Correlation": 0.40409518050561505,
+                    "PSNR": -6.903896611936778,
+                    "SSIM": 0.6462733596079938,
+                    "MSE": 4.90218459865761,
+                    "MAE": 0.1431981157417777
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-29-53": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:29:53 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 597243,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:31.81",
+                "elapsed real time (wall clock) in seconds": 91.81,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9820432,
+                "percent of CPU this job got": "383%",
+                "minor page faults": 2608590,
+                "system (kernel) time in seconds": 9.37,
+                "user time in seconds": 342.99,
+                "voluntary context switches": 744,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7228870947110306,
+                    "Spearman Correlation": 0.47679910198490477,
+                    "PSNR": -5.314522644533575,
+                    "SSIM": 0.6491400255547127,
+                    "MSE": 3.3997913488992992,
+                    "MAE": 0.11546645763056701
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-42-07": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:42:07 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 487593,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:02.57",
+                "elapsed real time (wall clock) in seconds": 62.57,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8012864,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 1732717,
+                "system (kernel) time in seconds": 6.86,
+                "user time in seconds": 231.22,
+                "voluntary context switches": 1075,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6678058632943874,
+                    "Spearman Correlation": 0.404280015595023,
+                    "PSNR": -6.782600466940662,
+                    "SSIM": 0.6462446398720144,
+                    "MSE": 4.767163494069022,
+                    "MAE": 0.14259692153918366
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-21-56": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:21:56 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 1197467,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:38.93",
+                "elapsed real time (wall clock) in seconds": 98.93,
+                "major page faults": 3,
+                "maximum resident set size in KB": 7944512,
+                "percent of CPU this job got": "371%",
+                "minor page faults": 2773268,
+                "system (kernel) time in seconds": 14.11,
+                "user time in seconds": 353.44,
+                "voluntary context switches": 1085,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.720761040630136,
+                    "Spearman Correlation": 0.4725134393308164,
+                    "PSNR": -5.363909062160666,
+                    "SSIM": 0.6490258411335029,
+                    "MSE": 3.4386732184322284,
+                    "MAE": 0.11680460400084498
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-16-48": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:16:48 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 1637495,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:28.63",
+                "elapsed real time (wall clock) in seconds": 88.63,
+                "major page faults": 3,
+                "maximum resident set size in KB": 7426256,
+                "percent of CPU this job got": "348%",
+                "minor page faults": 3170003,
+                "system (kernel) time in seconds": 20.66,
+                "user time in seconds": 288.32,
+                "voluntary context switches": 747,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6662822562272324,
+                    "Spearman Correlation": 0.4034102572249393,
+                    "PSNR": -6.866700605166515,
+                    "SSIM": 0.6462370353390022,
+                    "MSE": 4.8603781578909135,
+                    "MAE": 0.14317313664286685
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-19-38": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:19:38 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 716194,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:07.88",
+                "elapsed real time (wall clock) in seconds": 67.88,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8766592,
+                "percent of CPU this job got": "370%",
+                "minor page faults": 1914599,
+                "system (kernel) time in seconds": 8.48,
+                "user time in seconds": 243.1,
+                "voluntary context switches": 765,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6690477260022902,
+                    "Spearman Correlation": 0.4048035405356221,
+                    "PSNR": -6.742328720747583,
+                    "SSIM": 0.6462924809457933,
+                    "MSE": 4.723162330088846,
+                    "MAE": 0.1424303636576386
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-35-05": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:35:05 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 546033,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:12.57",
+                "elapsed real time (wall clock) in seconds": 72.57,
+                "major page faults": 6,
+                "maximum resident set size in KB": 10003888,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 2049325,
+                "system (kernel) time in seconds": 7.75,
+                "user time in seconds": 268.93,
+                "voluntary context switches": 1072,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6656810913738544,
+                    "Spearman Correlation": 0.4021856909164124,
+                    "PSNR": -6.938348601345945,
+                    "SSIM": 0.6462899388671148,
+                    "MSE": 4.9412276177534205,
+                    "MAE": 0.14427996280726754
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-39-55": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:39:55 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 619348,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:31.87",
+                "elapsed real time (wall clock) in seconds": 91.87,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9987312,
+                "percent of CPU this job got": "383%",
+                "minor page faults": 2568762,
+                "system (kernel) time in seconds": 9.81,
+                "user time in seconds": 342.92,
+                "voluntary context switches": 747,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7187271918117807,
+                    "Spearman Correlation": 0.4744417247473316,
+                    "PSNR": -5.477793476518819,
+                    "SSIM": 0.649131617890722,
+                    "MSE": 3.5300377331059822,
+                    "MAE": 0.11778456384270392
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-44-25": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:44:25 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 578388,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:48.00",
+                "elapsed real time (wall clock) in seconds": 48.0,
+                "major page faults": 2,
+                "maximum resident set size in KB": 6309888,
+                "percent of CPU this job got": "378%",
+                "minor page faults": 1301780,
+                "system (kernel) time in seconds": 4.97,
+                "user time in seconds": 176.6,
+                "voluntary context switches": 744,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6496788119447119,
+                    "Spearman Correlation": 0.37249996820565917,
+                    "PSNR": -7.42885016822373,
+                    "SSIM": 0.6451089843270049,
+                    "MSE": 5.532036244351687,
+                    "MAE": 0.1541731068054478
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-25-12": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:25:12 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 509200,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:12.34",
+                "elapsed real time (wall clock) in seconds": 72.34,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8845728,
+                "percent of CPU this job got": "379%",
+                "minor page faults": 2170551,
+                "system (kernel) time in seconds": 8.45,
+                "user time in seconds": 266.41,
+                "voluntary context switches": 745,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6633553305324267,
+                    "Spearman Correlation": 0.39816681364993406,
+                    "PSNR": -6.976633602631984,
+                    "SSIM": 0.6460869404977855,
+                    "MSE": 4.984979311576951,
+                    "MAE": 0.1449991316898553
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-23-10": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:23:10 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 841858,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:06.75",
+                "elapsed real time (wall clock) in seconds": 66.75,
+                "major page faults": 196,
+                "maximum resident set size in KB": 6438176,
+                "percent of CPU this job got": "367%",
+                "minor page faults": 1738898,
+                "system (kernel) time in seconds": 8.85,
+                "user time in seconds": 236.7,
+                "voluntary context switches": 962,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6678909500160416,
+                    "Spearman Correlation": 0.40673272947050126,
+                    "PSNR": -6.800130040968555,
+                    "SSIM": 0.6462391439391593,
+                    "MSE": 4.786444241769995,
+                    "MAE": 0.14222264755440184
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-27-29": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:27:29 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 428934,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:50.41",
+                "elapsed real time (wall clock) in seconds": 50.41,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8023840,
+                "percent of CPU this job got": "377%",
+                "minor page faults": 1604350,
+                "system (kernel) time in seconds": 6.34,
+                "user time in seconds": 184.1,
+                "voluntary context switches": 745,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6511742130258917,
+                    "Spearman Correlation": 0.37552555227069034,
+                    "PSNR": -7.335364069342956,
+                    "SSIM": 0.6450360233625504,
+                    "MSE": 5.4142263347444,
+                    "MAE": 0.153573104266288
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-05-22": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:05:22 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 842213,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:08.83",
+                "elapsed real time (wall clock) in seconds": 68.83,
+                "major page faults": 3,
+                "maximum resident set size in KB": 7484560,
+                "percent of CPU this job got": "369%",
+                "minor page faults": 1901423,
+                "system (kernel) time in seconds": 9.51,
+                "user time in seconds": 244.74,
+                "voluntary context switches": 1082,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6711967500723396,
+                    "Spearman Correlation": 0.4120095538442654,
+                    "PSNR": -6.708290133501857,
+                    "SSIM": 0.6463905490056127,
+                    "MSE": 4.6862884134426785,
+                    "MAE": 0.14097305094393264
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-52-34": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:52:34 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 453433,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:09.86",
+                "elapsed real time (wall clock) in seconds": 69.86,
+                "major page faults": 2,
+                "maximum resident set size in KB": 8967504,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 2064458,
+                "system (kernel) time in seconds": 7.82,
+                "user time in seconds": 258.62,
+                "voluntary context switches": 0,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6626819388771237,
+                    "Spearman Correlation": 0.39815292548207676,
+                    "PSNR": -7.001594956640609,
+                    "SSIM": 0.6460820118037194,
+                    "MSE": 5.013713296136017,
+                    "MAE": 0.145070402329867
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-49-45": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:49:45 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 419805,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:16.49",
+                "elapsed real time (wall clock) in seconds": 76.49,
+                "major page faults": 2,
+                "maximum resident set size in KB": 7902608,
+                "percent of CPU this job got": "385%",
+                "minor page faults": 2009152,
+                "system (kernel) time in seconds": 6.63,
+                "user time in seconds": 288.51,
+                "voluntary context switches": 0,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6796786687343129,
+                    "Spearman Correlation": 0.42774826401266974,
+                    "PSNR": -6.5824353951973436,
+                    "SSIM": 0.6472353868117737,
+                    "MSE": 4.552432755692817,
+                    "MAE": 0.13420884845849856
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-01-37": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:01:37 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 630872,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:32.31",
+                "elapsed real time (wall clock) in seconds": 92.31,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9417008,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 2603935,
+                "system (kernel) time in seconds": 9.83,
+                "user time in seconds": 342.76,
+                "voluntary context switches": 1087,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7206387098772152,
+                    "Spearman Correlation": 0.47525490036184015,
+                    "PSNR": -5.411898462841279,
+                    "SSIM": 0.6491509256709618,
+                    "MSE": 3.476881156459863,
+                    "MAE": 0.11737119413063592
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-59-21": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "lasso",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:59:21 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 450424,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:03.05",
+                "elapsed real time (wall clock) in seconds": 63.05,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9859104,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 1827072,
+                "system (kernel) time in seconds": 6.7,
+                "user time in seconds": 234.14,
+                "voluntary context switches": 1083,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6713317011572011,
+                    "Spearman Correlation": 0.41103967534733304,
+                    "PSNR": -6.733263574496748,
+                    "SSIM": 0.6464609402879804,
+                    "MSE": 4.7133138276362425,
+                    "MAE": 0.1416381366398877
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-48-10": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:48:10 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 403016,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:45.43",
+                "elapsed real time (wall clock) in seconds": 45.43,
+                "major page faults": 2,
+                "maximum resident set size in KB": 5795312,
+                "percent of CPU this job got": "382%",
+                "minor page faults": 1212565,
+                "system (kernel) time in seconds": 4.03,
+                "user time in seconds": 169.69,
+                "voluntary context switches": 64,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6498582272512452,
+                    "Spearman Correlation": 0.3736802678946411,
+                    "PSNR": -7.421371629623563,
+                    "SSIM": 0.6450625919274572,
+                    "MSE": 5.522518291002469,
+                    "MAE": 0.15332212161374512
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-37-35": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:37:35 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 528505,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:04.23",
+                "elapsed real time (wall clock) in seconds": 64.23,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9725712,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 1836677,
+                "system (kernel) time in seconds": 7.02,
+                "user time in seconds": 237.93,
+                "voluntary context switches": 1077,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6704709798649917,
+                    "Spearman Correlation": 0.41049756393879133,
+                    "PSNR": -6.762513538425764,
+                    "SSIM": 0.6464020421954791,
+                    "MSE": 4.745165387072221,
+                    "MAE": 0.14219239763645475
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-25-22": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:25:22 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 529519,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:01.94",
+                "elapsed real time (wall clock) in seconds": 61.94,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8236384,
+                "percent of CPU this job got": "375%",
+                "minor page faults": 1776281,
+                "system (kernel) time in seconds": 7.49,
+                "user time in seconds": 225.06,
+                "voluntary context switches": 747,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6678909500160416,
+                    "Spearman Correlation": 0.40673272947050126,
+                    "PSNR": -6.800130040968555,
+                    "SSIM": 0.6462391439391593,
+                    "MSE": 4.786444241769995,
+                    "MAE": 0.14222264755440184
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-07-45": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:07:45 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 1256004,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:41.33",
+                "elapsed real time (wall clock) in seconds": 101.33,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8156592,
+                "percent of CPU this job got": "370%",
+                "minor page faults": 2876505,
+                "system (kernel) time in seconds": 14.88,
+                "user time in seconds": 360.51,
+                "voluntary context switches": 854,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7206660012563701,
+                    "Spearman Correlation": 0.47595674967077534,
+                    "PSNR": -5.390594042979744,
+                    "SSIM": 0.6491147134112378,
+                    "MSE": 3.4598669984441,
+                    "MAE": 0.11591126892401638
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-35-25": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:35:25 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 462981,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:01.81",
+                "elapsed real time (wall clock) in seconds": 61.81,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8678368,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 1891450,
+                "system (kernel) time in seconds": 7.26,
+                "user time in seconds": 227.7,
+                "voluntary context switches": 1077,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6679366802771061,
+                    "Spearman Correlation": 0.4051389949245866,
+                    "PSNR": -6.822325870962603,
+                    "SSIM": 0.6462956113723797,
+                    "MSE": 4.810969316912394,
+                    "MAE": 0.14331127793482526
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-39-42": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:39:42 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 405301,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:09.58",
+                "elapsed real time (wall clock) in seconds": 69.58,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9130992,
+                "percent of CPU this job got": "380%",
+                "minor page faults": 1863799,
+                "system (kernel) time in seconds": 7.12,
+                "user time in seconds": 257.74,
+                "voluntary context switches": 752,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6655388657143126,
+                    "Spearman Correlation": 0.4031521363665945,
+                    "PSNR": -6.900260209458329,
+                    "SSIM": 0.6462333123515641,
+                    "MSE": 4.898081655620175,
+                    "MAE": 0.14332823622215926
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-29-16": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:29:16 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 536262,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:02.62",
+                "elapsed real time (wall clock) in seconds": 62.62,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8526896,
+                "percent of CPU this job got": "378%",
+                "minor page faults": 1858024,
+                "system (kernel) time in seconds": 7.71,
+                "user time in seconds": 229.05,
+                "voluntary context switches": 756,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.668696399850681,
+                    "Spearman Correlation": 0.40699651527949365,
+                    "PSNR": -6.7674169037497975,
+                    "SSIM": 0.6462808563515987,
+                    "MSE": 4.7505259016984915,
+                    "MAE": 0.14215229357857034
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-48-56": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:48:56 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 650348,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:13.30",
+                "elapsed real time (wall clock) in seconds": 73.3,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9304384,
+                "percent of CPU this job got": "378%",
+                "minor page faults": 2209567,
+                "system (kernel) time in seconds": 9.46,
+                "user time in seconds": 268.13,
+                "voluntary context switches": 1071,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6657630804208281,
+                    "Spearman Correlation": 0.40200244104024374,
+                    "PSNR": -6.910570932459351,
+                    "SSIM": 0.6462607045587037,
+                    "MSE": 4.909724161539878,
+                    "MAE": 0.14433532932375254
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-53-45": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "elasticnet",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:53:45 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 653683,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:30.70",
+                "elapsed real time (wall clock) in seconds": 90.7,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9548256,
+                "percent of CPU this job got": "383%",
+                "minor page faults": 2484572,
+                "system (kernel) time in seconds": 9.39,
+                "user time in seconds": 338.11,
+                "voluntary context switches": 815,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.7184502660031165,
+                    "Spearman Correlation": 0.47083417518352577,
+                    "PSNR": -5.4629809360432,
+                    "SSIM": 0.6490365363735152,
+                    "MSE": 3.5180182948753753,
+                    "MAE": 0.11873555709646805
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_19-41-55": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "ridge",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "1",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 19:41:55 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 415224,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:01.97",
+                "elapsed real time (wall clock) in seconds": 61.97,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8096336,
+                "percent of CPU this job got": "382%",
+                "minor page faults": 1699159,
+                "system (kernel) time in seconds": 6.29,
+                "user time in seconds": 230.74,
+                "voluntary context switches": 1076,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6702112600657912,
+                    "Spearman Correlation": 0.4115283442825246,
+                    "PSNR": -6.746408412299335,
+                    "SSIM": 0.6463366272905676,
+                    "MSE": 4.727601276381538,
+                    "MAE": 0.14107764232689518
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-12-21": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.25",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "2",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:12:21 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 516934,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:47.25",
+                "elapsed real time (wall clock) in seconds": 47.25,
+                "major page faults": 3,
+                "maximum resident set size in KB": 6306256,
+                "percent of CPU this job got": "379%",
+                "minor page faults": 1303305,
+                "system (kernel) time in seconds": 4.77,
+                "user time in seconds": 174.76,
+                "voluntary context switches": 806,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6495471034768825,
+                    "Spearman Correlation": 0.37366289310653167,
+                    "PSNR": -7.411636540642746,
+                    "SSIM": 0.6450699125627349,
+                    "MSE": 5.510152949543458,
+                    "MAE": 0.1535117794326316
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_20-43-19": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.1",
+                "ROI_METHOD": "random",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 20:43:19 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 382337,
+                "elapsed real time (wall clock) in [hour:]min:sec": "0:30.31",
+                "elapsed real time (wall clock) in seconds": 30.31,
+                "major page faults": 3,
+                "maximum resident set size in KB": 8768976,
+                "percent of CPU this job got": "366%",
+                "minor page faults": 908156,
+                "system (kernel) time in seconds": 4.23,
+                "user time in seconds": 106.94,
+                "voluntary context switches": 1068,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6430823646730901,
+                    "Spearman Correlation": 0.3600073605028553,
+                    "PSNR": -7.6024626271156395,
+                    "SSIM": 0.6443527955163376,
+                    "MSE": 5.757663278171691,
+                    "MAE": 0.15971090428417212
+                }
+            }
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/lowres/2025-05-08_21-37-34": {
+            "parameters": {
+                "Parameters": "",
+                "MCCOOL": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/",
+                "CHROM": "21",
+                "CHROM_LEN": "46709983",
+                "USE_ROI": "1",
+                "ROI_SPARSITY": "0.5",
+                "ROI_METHOD": "logreg",
+                "INTERPOLATION": "lowres",
+                "EXPECTED_VALUES": "",
+                "RESOLUTION": "10000",
+                "MODEL": "3",
+                "RATIO": "16",
+                "APPLY_DOWN_RATIO": "1",
+                "DATE": "Thu May  8 21:37:34 EDT 2025"
+            },
+            "gtime": {
+                "involuntary context switches": 448894,
+                "elapsed real time (wall clock) in [hour:]min:sec": "1:01.44",
+                "elapsed real time (wall clock) in seconds": 61.44,
+                "major page faults": 3,
+                "maximum resident set size in KB": 9687248,
+                "percent of CPU this job got": "381%",
+                "minor page faults": 1777575,
+                "system (kernel) time in seconds": 6.71,
+                "user time in seconds": 227.83,
+                "voluntary context switches": 746,
+                "exit status of command": 0
+            },
+            "outputs/imputed/HiCNN2/down16/roi/lowres/summary/metrics_v_orig.json": {
+                "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000": {
+                    "Pearson Correlation": 0.6679366802771061,
+                    "Spearman Correlation": 0.4051389949245866,
+                    "PSNR": -6.822325870962603,
+                    "SSIM": 0.6462956113723797,
+                    "MSE": 4.810969316912394,
+                    "MAE": 0.14331127793482526
+                }
+            }
+        }
+    }
+}
