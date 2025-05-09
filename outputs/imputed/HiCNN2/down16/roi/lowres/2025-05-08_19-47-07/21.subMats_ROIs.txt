@@ -1,0 +1,4 @@
+Num ROIs: 226 of 1300
+Final sparsity: 0.17384615384615384
+Method used to calculate ROIs: random
+Sparsity threshold: 0.1

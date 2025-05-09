@@ -1,0 +1,4 @@
+Num ROIs: 828 of 1300
+Final sparsity: 0.6369230769230769
+Method used to calculate ROIs: lasso
+Sparsity threshold: 0.5

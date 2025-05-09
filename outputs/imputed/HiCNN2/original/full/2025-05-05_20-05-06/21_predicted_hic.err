@@ -1,0 +1,12 @@
+python HiCNN2_package/HiCNN2_predict_roi.py -f1 outputs/imputed/HiCNN2/full/2025-05-05_20-05-06/21.subMats.npy -f2 outputs/imputed/HiCNN2/full/2025-05-05_20-05-06/21.subMats_HiCNN23_16 -m HiCNN2_package/checkpoint/model_HiCNN23_16.pt -r 16 --model 3 --submat-indices outputs/imputed/HiCNN2/full/2025-05-05_20-05-06/21.index.npy --resolution 10000   command line and arguments
+ 1742179   involuntary context switches
+ 2:08.88   elapsed real time (wall clock) in [hour:]min:sec
+ 128.88   elapsed real time (wall clock) in seconds
+ 3349   major page faults
+ 8472432   maximum resident set size in KB
+ 358%   percent of CPU this job got
+ 4049660   minor page faults
+ 23.00   system (kernel) time in seconds
+ 438.76   user time in seconds
+ 803   voluntary context switches
+ 0   exit status of command

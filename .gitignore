@@ -5,5 +5,6 @@ venvs/
 *venv*
 *.npy
 *.npz
-*.err
-*.out
+*.cool
+*.mcool
+*tmp*

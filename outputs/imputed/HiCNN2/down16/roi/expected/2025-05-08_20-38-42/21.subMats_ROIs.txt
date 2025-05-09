@@ -1,0 +1,4 @@
+Num ROIs: 498 of 1300
+Final sparsity: 0.3830769230769231
+Method used to calculate ROIs: ridge
+Sparsity threshold: 0.25

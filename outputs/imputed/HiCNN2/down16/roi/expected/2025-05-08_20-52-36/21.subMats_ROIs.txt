@@ -1,0 +1,4 @@
+Num ROIs: 489 of 1300
+Final sparsity: 0.37615384615384617
+Method used to calculate ROIs: elasticnet
+Sparsity threshold: 0.25

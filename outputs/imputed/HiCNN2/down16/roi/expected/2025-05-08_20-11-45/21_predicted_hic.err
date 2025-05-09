@@ -1,0 +1,12 @@
+python HiCNN2_package/HiCNN2_predict_roi.py -f1 outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-11-45/21.subMats.npy -f2 outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-11-45/21.subMats_HiCNN22_16 -m HiCNN2_package/checkpoint/model_HiCNN22_16.pt -r 16 --model 2 --submat-indices outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-11-45/21.index.npy --resolution 10000 --non-roi-method expected --expected-values /Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.expected.tsv --apply-down-ratio --roi-indices outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-11-45/21.subMats_ROIs.npy --non-roi-method expected   command line and arguments
+ 510490   involuntary context switches
+ 0:32.63   elapsed real time (wall clock) in [hour:]min:sec
+ 32.63   elapsed real time (wall clock) in seconds
+ 3   major page faults
+ 6197024   maximum resident set size in KB
+ 352%   percent of CPU this job got
+ 1014318   minor page faults
+ 5.38   system (kernel) time in seconds
+ 109.68   user time in seconds
+ 747   voluntary context switches
+ 0   exit status of command

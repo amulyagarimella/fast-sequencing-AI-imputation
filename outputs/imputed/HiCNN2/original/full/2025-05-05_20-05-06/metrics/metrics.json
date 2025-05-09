@@ -1,0 +1,8 @@
+{
+    "Pearson Correlation (High=Better)": NaN,
+    "Spearman Correlation (High=Better)": NaN,
+    "PSNR (High=Better)": Infinity,
+    "SSIM (High=Better)": 0.9974769226183643,
+    "MSE (Low=Better)": 2.611604790423707e-06,
+    "MAE (Low=Better)": 0.00015341590906353564
+}
