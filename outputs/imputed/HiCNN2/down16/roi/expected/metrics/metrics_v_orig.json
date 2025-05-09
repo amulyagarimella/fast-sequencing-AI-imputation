@@ -1,0 +1,373 @@
+{
+    "base_file": "/Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.mcool::resolutions/10000",
+    "comparisons": {
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-19-01/21_predicted.cool": {
+            "Pearson Correlation": 0.684190492149725,
+            "Spearman Correlation": 0.39010028872894104,
+            "PSNR": -4.91772494411639,
+            "SSIM": 0.6455429866334262,
+            "MSE": 3.1029336874590396,
+            "MAE": 0.1031841659462832
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-40-37/21_predicted.cool": {
+            "Pearson Correlation": 0.6841725057033508,
+            "Spearman Correlation": 0.39110688677648336,
+            "PSNR": -4.906086854014975,
+            "SSIM": 0.6455088665829023,
+            "MSE": 3.09462967248368,
+            "MAE": 0.10207642311770229
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-42-59/21_predicted.cool": {
+            "Pearson Correlation": 0.6872392660001829,
+            "Spearman Correlation": 0.4055713361281381,
+            "PSNR": -5.511341861204032,
+            "SSIM": 0.6454550343881544,
+            "MSE": 3.5574121671861634,
+            "MAE": 0.10942550318332261
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-45-36/21_predicted.cool": {
+            "Pearson Correlation": 0.7054362884868102,
+            "Spearman Correlation": 0.47609465058154926,
+            "PSNR": -5.361317542516447,
+            "SSIM": 0.6486345421975741,
+            "MSE": 3.436621907329743,
+            "MAE": 0.11093474492283772
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-47-38/21_predicted.cool": {
+            "Pearson Correlation": 0.5703695454572094,
+            "Spearman Correlation": 0.32796839540548156,
+            "PSNR": -6.4434220008119425,
+            "SSIM": 0.6418940480196734,
+            "MSE": 4.409021332196303,
+            "MAE": 0.11689677458416561
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-48-57/21_predicted.cool": {
+            "Pearson Correlation": 0.5838018611679595,
+            "Spearman Correlation": 0.34934453253316383,
+            "PSNR": -6.174158862431035,
+            "SSIM": 0.6430604429115582,
+            "MSE": 4.1439631636665855,
+            "MAE": 0.11374120397698421
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-51-04/21_predicted.cool": {
+            "Pearson Correlation": 0.6415438904388396,
+            "Spearman Correlation": 0.4204300424854588,
+            "PSNR": -5.6078178775901755,
+            "SSIM": 0.6463151015755317,
+            "MSE": 3.6373223212632038,
+            "MAE": 0.10930839933430014
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-53-46/21_predicted.cool": {
+            "Pearson Correlation": 0.6852533444361745,
+            "Spearman Correlation": 0.3843506608013856,
+            "PSNR": -4.886537114200802,
+            "SSIM": 0.6452627446146157,
+            "MSE": 3.080730522685124,
+            "MAE": 0.10197609422317776
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-56-03/21_predicted.cool": {
+            "Pearson Correlation": 0.6993045847866198,
+            "Spearman Correlation": 0.4066136683183315,
+            "PSNR": -5.432349192743705,
+            "SSIM": 0.6455734247458744,
+            "MSE": 3.4932922411114626,
+            "MAE": 0.10925142865549978
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_19-58-46/21_predicted.cool": {
+            "Pearson Correlation": 0.7189247042485178,
+            "Spearman Correlation": 0.4776554441948834,
+            "PSNR": -5.346513268279729,
+            "SSIM": 0.6486826510083485,
+            "MSE": 3.42492705988535,
+            "MAE": 0.11157654734861532
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-03-58/21_predicted.cool": {
+            "Pearson Correlation": 0.6858384603937615,
+            "Spearman Correlation": 0.39193565664898244,
+            "PSNR": -4.86273263906483,
+            "SSIM": 0.6455240877689744,
+            "MSE": 3.0638906683632285,
+            "MAE": 0.10210231888079337
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-06-33/21_predicted.cool": {
+            "Pearson Correlation": 0.6889135756075224,
+            "Spearman Correlation": 0.40623593097900995,
+            "PSNR": -5.460611322372325,
+            "SSIM": 0.6455036542539068,
+            "MSE": 3.516099304247304,
+            "MAE": 0.10932091180036008
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-09-29/21_predicted.cool": {
+            "Pearson Correlation": 0.7070586605706506,
+            "Spearman Correlation": 0.47739176923606685,
+            "PSNR": -5.30412618990138,
+            "SSIM": 0.6487126654061051,
+            "MSE": 3.3916624167823612,
+            "MAE": 0.11089509919704343
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-11-45/21_predicted.cool": {
+            "Pearson Correlation": 0.5704769835180038,
+            "Spearman Correlation": 0.32810630196837004,
+            "PSNR": -6.425422294124678,
+            "SSIM": 0.6418952957939084,
+            "MSE": 4.390785581660777,
+            "MAE": 0.11679410819598152
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-13-10/21_predicted.cool": {
+            "Pearson Correlation": 0.5837272631361543,
+            "Spearman Correlation": 0.349740028777444,
+            "PSNR": -6.161180398328767,
+            "SSIM": 0.6430594509131108,
+            "MSE": 4.131597822207574,
+            "MAE": 0.11393086179587071
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-15-25/21_predicted.cool": {
+            "Pearson Correlation": 0.6424371233127328,
+            "Spearman Correlation": 0.4214327709064739,
+            "PSNR": -5.568976227480472,
+            "SSIM": 0.6463286349087376,
+            "MSE": 3.604936529942996,
+            "MAE": 0.10936977000116554
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-18-19/21_predicted.cool": {
+            "Pearson Correlation": 0.7042825320771112,
+            "Spearman Correlation": 0.39261823985448036,
+            "PSNR": -4.752176570590975,
+            "SSIM": 0.6455703795023938,
+            "MSE": 2.9868791897568645,
+            "MAE": 0.1017972988748268
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-20-48/21_predicted.cool": {
+            "Pearson Correlation": 0.7071668695340915,
+            "Spearman Correlation": 0.39848932932134157,
+            "PSNR": -5.36026911159051,
+            "SSIM": 0.6454565191254312,
+            "MSE": 3.4357923720798573,
+            "MAE": 0.10888732964311834
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-23-38/21_predicted.cool": {
+            "Pearson Correlation": 0.7211241298308666,
+            "Spearman Correlation": 0.4741155561208196,
+            "PSNR": -5.34105467694218,
+            "SSIM": 0.6486040564757041,
+            "MSE": 3.4206250173879735,
+            "MAE": 0.11177523430967694
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-26-26/21_predicted.cool": {
+            "Pearson Correlation": 0.6869758782959527,
+            "Spearman Correlation": 0.3845309727976803,
+            "PSNR": -4.845840366637068,
+            "SSIM": 0.6452660771564693,
+            "MSE": 3.051996538126057,
+            "MAE": 0.10190482358316603
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-28-47/21_predicted.cool": {
+            "Pearson Correlation": 0.701121654049687,
+            "Spearman Correlation": 0.40740957893903734,
+            "PSNR": -5.379048375330515,
+            "SSIM": 0.645625629687774,
+            "MSE": 3.450681198360583,
+            "MAE": 0.10905407085749946
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-31-27/21_predicted.cool": {
+            "Pearson Correlation": 0.7206374832744068,
+            "Spearman Correlation": 0.4789416825727638,
+            "PSNR": -5.285578385365564,
+            "SSIM": 0.6487815450920488,
+            "MSE": 3.3772082268226846,
+            "MAE": 0.1114554101771999
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-36-20/21_predicted.cool": {
+            "Pearson Correlation": 0.684190492149725,
+            "Spearman Correlation": 0.39010028872894104,
+            "PSNR": -4.91772494411639,
+            "SSIM": 0.6455429866334262,
+            "MSE": 3.1029336874590396,
+            "MAE": 0.1031841659462832
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-38-42/21_predicted.cool": {
+            "Pearson Correlation": 0.6871561069462226,
+            "Spearman Correlation": 0.40485761545677823,
+            "PSNR": -5.532731643409131,
+            "SSIM": 0.6455191610363393,
+            "MSE": 3.5749762778768464,
+            "MAE": 0.11054025849288217
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-41-30/21_predicted.cool": {
+            "Pearson Correlation": 0.7048757868080496,
+            "Spearman Correlation": 0.475953214965775,
+            "PSNR": -5.393061325303493,
+            "SSIM": 0.6487365845242792,
+            "MSE": 3.4618331514442433,
+            "MAE": 0.11276839411573096
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-43-51/21_predicted.cool": {
+            "Pearson Correlation": 0.5696174045574792,
+            "Spearman Correlation": 0.32701183739924816,
+            "PSNR": -6.454589426501352,
+            "SSIM": 0.6419087142101475,
+            "MSE": 4.420373255570878,
+            "MAE": 0.11748165216435184
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-45-15/21_predicted.cool": {
+            "Pearson Correlation": 0.5833965449417646,
+            "Spearman Correlation": 0.3489637166391862,
+            "PSNR": -6.184122403713821,
+            "SSIM": 0.6431053445601108,
+            "MSE": 4.1534811170158035,
+            "MAE": 0.11459218916868688
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-47-32/21_predicted.cool": {
+            "Pearson Correlation": 0.6410580801909673,
+            "Spearman Correlation": 0.42027090784449445,
+            "PSNR": -5.616922057791326,
+            "SSIM": 0.6463839010892032,
+            "MSE": 3.6449552922254367,
+            "MAE": 0.11048007948945106
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-50-12/21_predicted.cool": {
+            "Pearson Correlation": 0.7020367899149721,
+            "Spearman Correlation": 0.3912781879589952,
+            "PSNR": -4.823339795510303,
+            "SSIM": 0.6455943946533701,
+            "MSE": 3.0362251934058295,
+            "MAE": 0.10295949155571249
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-52-36/21_predicted.cool": {
+            "Pearson Correlation": 0.7052883725283269,
+            "Spearman Correlation": 0.39727178798407564,
+            "PSNR": -5.442731408188221,
+            "SSIM": 0.6454846751908204,
+            "MSE": 3.501653272598831,
+            "MAE": 0.1101290887748467
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-55-19/21_predicted.cool": {
+            "Pearson Correlation": 0.7187862528808829,
+            "Spearman Correlation": 0.4725174163562759,
+            "PSNR": -5.440643334532446,
+            "SSIM": 0.6486183275729875,
+            "MSE": 3.4999700938311205,
+            "MAE": 0.1137061874053
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_20-58-06/21_predicted.cool": {
+            "Pearson Correlation": 0.6850352360021876,
+            "Spearman Correlation": 0.38327255971411356,
+            "PSNR": -4.903969196960626,
+            "SSIM": 0.645287095381259,
+            "MSE": 3.093121072409091,
+            "MAE": 0.10300578309681335
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-00-26/21_predicted.cool": {
+            "Pearson Correlation": 0.699394072655848,
+            "Spearman Correlation": 0.40602360916259983,
+            "PSNR": -5.455075225577533,
+            "SSIM": 0.6456538982924622,
+            "MSE": 3.511620070563892,
+            "MAE": 0.11029839664893243
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-03-12/21_predicted.cool": {
+            "Pearson Correlation": 0.7183264313525193,
+            "Spearman Correlation": 0.47747262184927364,
+            "PSNR": -5.38359805467727,
+            "SSIM": 0.6487995038951958,
+            "MSE": 3.4542980343832483,
+            "MAE": 0.1133601466772688
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-22-08/21_predicted.cool": {
+            "Pearson Correlation": 0.6493049498210943,
+            "Spearman Correlation": 0.3566979997252512,
+            "PSNR": -5.449522981766055,
+            "SSIM": 0.6437357837318493,
+            "MSE": 3.5071335035670383,
+            "MAE": 0.10667441064566112
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-24-19/21_predicted.cool": {
+            "Pearson Correlation": 0.6943877994829513,
+            "Spearman Correlation": 0.40024738951656674,
+            "PSNR": -5.466087167282151,
+            "SSIM": 0.645375276631843,
+            "MSE": 3.5205354088810368,
+            "MAE": 0.1091351956374485
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-26-26/21_predicted.cool": {
+            "Pearson Correlation": 0.6943877994829513,
+            "Spearman Correlation": 0.40024738951656674,
+            "PSNR": -5.466087167282151,
+            "SSIM": 0.645375276631843,
+            "MSE": 3.5205354088810368,
+            "MAE": 0.1091351956374485
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-28-22/21_predicted.cool": {
+            "Pearson Correlation": 0.6505863735171052,
+            "Spearman Correlation": 0.3566848761499884,
+            "PSNR": -5.424875013044711,
+            "SSIM": 0.6437514666215061,
+            "MSE": 3.48728547823814,
+            "MAE": 0.10671662303116003
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-30-21/21_predicted.cool": {
+            "Pearson Correlation": 0.6958021896905714,
+            "Spearman Correlation": 0.40072799923031327,
+            "PSNR": -5.4215505961038,
+            "SSIM": 0.6454175585706294,
+            "MSE": 3.484617068809534,
+            "MAE": 0.10906484166161699
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-32-35/21_predicted.cool": {
+            "Pearson Correlation": 0.6958021896905714,
+            "Spearman Correlation": 0.40072799923031327,
+            "PSNR": -5.4215505961038,
+            "SSIM": 0.6454175585706294,
+            "MSE": 3.484617068809534,
+            "MAE": 0.10906484166161699
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-34-32/21_predicted.cool": {
+            "Pearson Correlation": 0.6490018698194572,
+            "Spearman Correlation": 0.3553655856714067,
+            "PSNR": -5.466733201892416,
+            "SSIM": 0.6437528165839675,
+            "MSE": 3.5210591449604025,
+            "MAE": 0.1074576543544459
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-36-29/21_predicted.cool": {
+            "Pearson Correlation": 0.6939679584352502,
+            "Spearman Correlation": 0.39901111006704176,
+            "PSNR": -5.496236492944129,
+            "SSIM": 0.6454344711233824,
+            "MSE": 3.545060484023437,
+            "MAE": 0.11022382601787192
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-38-38/21_predicted.cool": {
+            "Pearson Correlation": 0.6939679584352502,
+            "Spearman Correlation": 0.39901111006704176,
+            "PSNR": -5.496236492944129,
+            "SSIM": 0.6454344711233824,
+            "MSE": 3.545060484023437,
+            "MAE": 0.11022382601787192
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-40-54/21_predicted.cool": {
+            "Pearson Correlation": 0.7022856363925827,
+            "Spearman Correlation": 0.3922274357965292,
+            "PSNR": -4.806654619556429,
+            "SSIM": 0.6455650916591608,
+            "MSE": 3.024582687486127,
+            "MAE": 0.10195239845411919
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-43-12/21_predicted.cool": {
+            "Pearson Correlation": 0.7052437008444032,
+            "Spearman Correlation": 0.3977662253005182,
+            "PSNR": -5.415534770472035,
+            "SSIM": 0.6454162936807747,
+            "MSE": 3.4797935360600336,
+            "MAE": 0.10905388752466343
+        },
+        "/Users/amulyagarimella/Documents/2241finalproject/outputs/imputed/HiCNN2/down16/roi/expected/2025-05-08_21-45-47/21_predicted.cool": {
+            "Pearson Correlation": 0.7193518738801852,
+            "Spearman Correlation": 0.472861179402392,
+            "PSNR": -5.404805537048473,
+            "SSIM": 0.6484933936008934,
+            "MSE": 3.471207326016795,
+            "MAE": 0.11200591285062805
+        }
+    }
+}
