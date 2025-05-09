@@ -1,0 +1,4 @@
+Num ROIs: 219 of 1300
+Final sparsity: 0.16846153846153847
+Method used to calculate ROIs: logreg
+Sparsity threshold: 0.1

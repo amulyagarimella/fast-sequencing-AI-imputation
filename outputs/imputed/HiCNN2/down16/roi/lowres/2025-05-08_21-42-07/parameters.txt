@@ -1,0 +1,14 @@
+Parameters:
+MCCOOL: /Users/amulyagarimella/Documents/2241finalproject/data/GM12878.GSE115524/processed/GM12878.GSE115524.Homo_Sapiens.CTCF.b1.ds.16.chr21.cool::/
+CHROM: 21
+CHROM_LEN: 46709983
+USE_ROI: 1
+ROI_SPARSITY: 0.25
+ROI_METHOD: elasticnet
+INTERPOLATION: lowres
+EXPECTED_VALUES: 
+RESOLUTION: 10000
+MODEL: 1
+RATIO: 16
+APPLY_DOWN_RATIO: 1
+DATE: Thu May  8 21:42:07 EDT 2025

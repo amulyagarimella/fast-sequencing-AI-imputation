@@ -13,7 +13,7 @@ def main():
     parser.add_argument('resolution', type=int, help='Resolution in bp')
     parser.add_argument('output_prefix', help='Output prefix for ROI indices file')
     parser.add_argument('--sparsity', type=float, default=0.1, help='ROI sparsity threshold (default: 0.1)')
-    parser.add_argument('--method', default='ridge', choices=['ridge', 'random', 'elasticnet', 'lasso', 'logistic'], 
+    parser.add_argument('--method', default='ridge', choices=['ridge', 'random', 'elasticnet', 'lasso', 'logreg'], 
                         help='ROI detection method (default: ridge)')
     parser.add_argument('--downsample', type=int, default=1, help='Downsample factor (default: 1)')
 
@@ -63,7 +63,7 @@ def main():
     elif args.method == "logreg":
         model = joblib.load(f"prediction_models/logreg_model_csc_40{downsample_string}.joblib")
         preds = model.predict_proba(features_csc)[:,1]
-        # ROIs are top n predicted
+        # ROIs are top n predicted - top n serves as upper bound
         top_n = int(args.sparsity*len(diag_idx))
         top_idx = np.argsort(preds)[::-1][:top_n]
         top_idx = top_idx[preds[top_idx] > 0.5]
