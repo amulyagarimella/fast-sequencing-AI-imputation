@@ -31,9 +31,9 @@ for i in range(predictions.shape[0]):
 	c2 = c1 + sub_mat_n
 	try:
 		predictions_mat[r1:r2, c1:c2] = predictions[i,6:-6,6:-6]
-		print(predictions[i,6:-6,6:-6][0][0])
-		diag_status_mat[r1:r2, c1:c2] = diagonal[i]
-		diag_status_mat[r1:r2, c1:c2] = diagonal_adjacent[i]*2
+		diag_status_mat[r1:r2, c1:c2] = int(diagonal[i])
+		if not diagonal[i]:
+			diag_status_mat[r1:r2, c1:c2] = int(diagonal_adjacent[i])/2
 	except Exception as e:
 		print("Error at index:", i)
 		print(e)
